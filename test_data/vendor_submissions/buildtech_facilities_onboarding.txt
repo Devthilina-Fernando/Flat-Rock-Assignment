@@ -1,0 +1,188 @@
+BuildTech Facilities Ltd
+New Supplier Registration — Flat Rock Technology Ltd
+
+Submitted via email to: procurement@flatrocktech.co.uk
+Date submitted: 4th March 2025
+
+---
+
+This document has been converted from our standard Word-format supplier
+pack. Please let us know if you need anything in a different format.
+
+---
+
+PART 1 — COMPANY DETAILS
+
+Company Name (Legal):     BuildTech Facilities Ltd
+Company Number:           06182947
+VAT Number:               GB 183 4420 77
+Registered Address:       Unit 7, Greenfield Business Park
+                          Letchworth Garden City
+                          Hertfordshire
+                          SG6 2AF
+
+Trading Address:          Same as above
+
+Nature of Business:       Facilities management, commercial cleaning,
+                          building maintenance, M&E services, security
+                          guarding, and grounds maintenance for commercial
+                          and office environments.
+
+Year Established:         2006
+Registered in:            England and Wales
+
+---
+
+PART 2 — CONTACT INFORMATION
+
+Primary Contact:          Gary Tomlin
+Title:                    Operations Director
+Email:                    g.tomlin@buildtechfacilities.co.uk
+Tel:                      01462 887 340
+Mobile:                   07834 221 094
+
+Finance Contact:          Michelle Osei
+Email:                    finance@buildtechfacilities.co.uk
+Tel:                      01462 887 341
+
+---
+
+PART 3 — FINANCIAL AND BANKING INFORMATION
+
+Bank:                     NatWest Bank plc
+Account Name:             BuildTech Facilities Ltd
+Sort Code:                60-17-83
+Account Number:           29384710
+
+Annual Turnover (FY ending 31 December 2023): £5,800,000
+Number of Employees: 112 (including site operatives)
+
+Credit References available on request. We are happy to provide
+two trade references if required.
+
+---
+
+PART 4 — PROPOSED SERVICES AND CONTRACT DETAILS
+
+Services to be Provided:
+
+BuildTech Facilities Ltd proposes to provide integrated facilities
+management services to Flat Rock Technology's Bristol office and
+co-working space. Services will include:
+
+  - Daily commercial cleaning (5 days per week)
+  - Reactive and planned preventative maintenance (PPM) for M&E
+  - Monthly external grounds maintenance
+  - Ad-hoc handyman/minor works call-out service
+
+Proposed Annual Contract Value:  £38,000
+Contract Term:                   12 months (with 3-month break clause)
+Proposed Payment Terms:          Net 45 days from invoice date
+Flat Rock Contact:               Emma Saunders, Office Manager
+
+---
+
+PART 5 — COMPLIANCE AND CERTIFICATIONS
+
+Health & Safety:
+  We hold a current CHAS (Contractors Health and Safety Assessment Scheme)
+  accreditation, certificate number CHAS-2025-BT-04471, valid until
+  28 February 2026.
+
+  Our Health & Safety policy is available on request. Last reviewed:
+  January 2025 by external H&S consultant.
+
+Quality Management:
+  ISO 9001:2015 certified — Certificate no. QMS-19847-BT
+  Certifying body: NQA Certification Ltd (UKAS accredited)
+  Valid until: 14 October 2026
+
+Environmental:
+  ISO 14001:2015 certified — Certificate no. EMS-11204-BT
+  Certifying body: NQA Certification Ltd
+  Valid until: 14 October 2026
+
+Modern Slavery:
+  Signed Modern Slavery Act compliance declaration is attached.
+
+Supplier Code of Conduct:
+  We have reviewed and agree to comply with Flat Rock Technology's
+  Supplier Code of Conduct (January 2025 version). Signed declaration
+  attached.
+
+---
+
+PART 6 — INSURANCE DETAILS
+
+Please see the insurance certificates attached to this email.
+
+  Public Liability Insurance:
+    Insurer:       RSA Insurance Group Ltd
+    Policy No.:    PL-RSA-8830-BT
+    Coverage:      £5,000,000 per occurrence
+    Policy Period: 1 January 2024 — 31 December 2024
+
+    NOTE FROM GARY TOMLIN: I know the dates on this one look a bit
+    off — we are currently in the process of renewing with our broker
+    (Marsh Commercial). I've been chasing them since January. I'll
+    forward the updated cert as soon as I have it but wanted to get
+    the registration form in to you in the meantime as I know you
+    need a vendor number raised before the contract can start.
+
+  Employer's Liability Insurance:
+    Insurer:       RSA Insurance Group Ltd
+    Policy No.:    EL-RSA-8831-BT
+    Coverage:      £10,000,000 per occurrence
+    Policy Period: 1 January 2025 — 31 December 2025
+    (Certificate attached)
+
+  Professional Indemnity:
+    Not applicable — we are a facilities management company and do not
+    provide professional advisory services. PI insurance is not
+    something we have historically held.
+
+---
+
+PART 7 — DECLARATIONS
+
+To the best of our knowledge:
+
+[X] BuildTech Facilities Ltd is not subject to any UK or international
+    financial sanctions.
+[X] BuildTech Facilities Ltd has no unsatisfied CCJs.
+[X] No company director is subject to a disqualification order.
+[X] The company is not in administration or any insolvency process.
+[X] We confirm compliance with our obligations under the Bribery Act 2010.
+
+---
+
+PART 8 — AUTHORISED SIGNATORY
+
+Signed:         Gary Tomlin — Operations Director
+Company:        BuildTech Facilities Ltd
+Date:           4 March 2025
+
+---
+
+ATTACHMENTS:
+[X] Certificate of Incorporation
+[X] VAT Certificate
+[X] CHAS Accreditation Certificate
+[X] ISO 9001 Certificate
+[X] ISO 14001 Certificate
+[X] Public Liability Certificate (EXPIRED — period 1 Jan 2024 to 31 Dec 2024, renewal pending per note above)
+[X] Employer's Liability Certificate (current — valid to Dec 2025)
+[X] Signed Modern Slavery Declaration
+[X] Signed Supplier Code of Conduct
+[ ] Professional Indemnity Certificate — NOT PROVIDED (not held)
+[ ] Bank confirmation letter — TO FOLLOW (requested from NatWest)
+
+---
+
+BuildTech Facilities Ltd | Reg. No. 06182947
+Unit 7 Greenfield Business Park, Letchworth Garden City, SG6 2AF
+Tel: 01462 887 340 | www.buildtechfacilities.co.uk
+
+EXPECTED ROUTING: FLAG_FOR_REVIEW (HIGH)
+Reason: INSURANCE_EXPIRED — Public liability policy period ended 31 December 2024.
+        Per PROC-POL-005 Section 4.3: expired insurance triggers immediate HOLD status.

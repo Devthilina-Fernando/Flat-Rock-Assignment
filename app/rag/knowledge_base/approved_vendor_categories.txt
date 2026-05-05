@@ -1,0 +1,147 @@
+FLAT ROCK TECHNOLOGY LTD
+APPROVED VENDOR CATEGORY REGISTER
+Document Reference: PROC-POL-003
+Version: 2.1
+Effective Date: 1 February 2025
+Review Date: 31 January 2026
+Policy Owner: Head of Procurement
+Approved By: Chief Operating Officer
+
+1. PURPOSE
+
+This register defines the approved vendor category framework. Categories determine the level of due diligence required and the applicable approval pathway. Categories must be assigned by the Procurement team; vendors may not self-assign a category.
+
+2. CATEGORY TIER DEFINITIONS
+
+  TIER 1 — PRE-APPROVED (STREAMLINED ONBOARDING)
+  Vendors in Tier 1 categories are subject to a streamlined 5-business-day review. Standard compliance documents apply. Enhanced due diligence is not required unless specific risk factors are identified. Procurement Manager approval is sufficient for contracts up to £100,000.
+
+  TIER 2 — STANDARD APPROVAL
+  Vendors in Tier 2 categories follow the standard onboarding process (10–15 business days). Full compliance documentation required. Approval authority per contract value thresholds in PROC-POL-001.
+
+  TIER 3 — ENHANCED DUE DILIGENCE
+  Vendors in Tier 3 categories require enhanced due diligence including detailed financial assessment, enhanced sanctions and adverse media screening, site visit or reference checks (minimum two independent references), and legal review of contract terms. Minimum 20 business day review regardless of contract value. CFO or Director sign-off required for all Tier 3 engagements.
+
+  NOT APPROVED — ABSOLUTE PROHIBITION
+  The Company does not engage vendors operating in these categories under any circumstances. Not Approved status is absolute and cannot be overridden without a Board resolution.
+
+3. TIER 1 — PRE-APPROVED CATEGORIES (STREAMLINED)
+
+  CAT-T1-001: Cloud Infrastructure & Hosting Services
+    Sub-categories: IaaS, PaaS, cloud storage, CDN, data centre colocation, managed cloud hosting, disaster recovery as a service (DRaaS)
+
+  CAT-T1-002: Software as a Service (SaaS) — Business Applications
+    Sub-categories: ERP systems, CRM platforms, project management tools, HR information systems (HRIS), finance and accounting software, collaboration tools
+
+  CAT-T1-003: Software Development & Engineering Services
+    Sub-categories: Custom software development, mobile application development, API development, QA and testing services, DevOps consultancy, technical architecture
+
+  CAT-T1-004: Cybersecurity Services
+    Sub-categories: Managed Security Operations Centre (SOC), vulnerability management, penetration testing, endpoint detection and response (EDR), security awareness training, SIEM managed services
+
+  CAT-T1-005: IT Hardware & Peripherals
+    Sub-categories: Laptops, desktops, monitors, networking equipment, servers, storage devices, printers, peripherals, IT accessories
+
+  CAT-T1-006: Telecommunications & Connectivity
+    Sub-categories: Mobile contracts, fixed-line telephony, broadband and leased line connectivity, VoIP services, unified communications
+
+  CAT-T1-007: Office Supplies & Consumables
+    Sub-categories: Stationery, paper products, printer consumables, cleaning supplies, kitchen consumables, small office equipment
+
+  CAT-T1-008: Utilities
+    Sub-categories: Electricity, gas, water supply for Company premises
+
+4. TIER 2 — STANDARD APPROVAL CATEGORIES
+
+  CAT-T2-001: Professional Services — Consulting
+    Sub-categories: Management consulting, business strategy, organisational design, change management, interim management, operational improvement
+
+  CAT-T2-002: Professional Services — Legal
+    Sub-categories: Commercial legal advice, employment law, IP and licensing, dispute resolution, regulatory compliance legal advice
+    Note: All legal suppliers must be SRA-regulated or equivalent recognised body.
+
+  CAT-T2-003: Professional Services — Finance & Accountancy
+    Sub-categories: Audit services, tax advisory, financial modelling, bookkeeping, payroll processing, VAT consultancy
+
+  CAT-T2-004: Marketing & Creative Services
+    Sub-categories: Digital marketing, SEO and PPC, brand strategy, graphic design, content production, copywriting, PR and communications, events management
+
+  CAT-T2-005: Facilities Management
+    Sub-categories: Office cleaning, building maintenance, security guarding, reception services, waste management, pest control, HVAC servicing, fire safety and compliance
+
+  CAT-T2-006: Recruitment & Staffing
+    Sub-categories: Permanent recruitment, temporary staffing, contract staffing, executive search, RPO services
+
+  CAT-T2-007: Training & Development
+    Sub-categories: Technical training, leadership development, compliance training delivery, e-learning platform provision, apprenticeship support
+
+  CAT-T2-008: Logistics & Courier Services
+    Sub-categories: Same-day courier, parcel delivery, freight, international shipping, document courier
+
+  CAT-T2-009: Data & Analytics Services (Non-Sensitive)
+    Sub-categories: Market data subscriptions, business intelligence tools, data visualisation platforms, industry benchmarking services
+    Note: Where services involve processing personal data, reclassification to Tier 3 may apply — refer to DPO.
+
+  CAT-T2-010: Research & Development — External Partners
+    Sub-categories: University research partnerships, technical research agencies, innovation and patent research
+
+5. TIER 3 — ENHANCED DUE DILIGENCE CATEGORIES
+
+  CAT-T3-001: Data Processing — Personal Data (High Volume or Sensitive)
+    Sub-categories: HR data processing, health and medical data processing, financial data processing on behalf of the Company, customer personal data platforms, data brokers, identity verification services
+    Rationale: High risk of data protection regulatory exposure. DPO sign-off mandatory.
+
+  CAT-T3-002: Payment Processing & Financial Infrastructure
+    Sub-categories: Payment gateways, acquiring banks, e-money institutions, card processing vendors, billing and collections platforms
+    Rationale: PCI DSS, FCA regulation, financial crime risk. Legal and CFO sign-off required.
+
+  CAT-T3-003: Outsourced Business Process (BPO) — Customer-Facing
+    Sub-categories: Customer service outsourcing, contact centre services, complaints handling, customer data management
+    Rationale: Reputational risk; significant personal data exposure; regulatory scrutiny potential.
+
+  CAT-T3-004: Legal Compliance & Regulatory Advisory
+    Sub-categories: FCA regulatory advisory, GDPR advisory, employment tribunal support, anti-bribery compliance consultancy
+    Rationale: Privileged information access; regulatory sensitivity.
+
+  CAT-T3-005: Mergers, Acquisitions & Corporate Finance Advisory
+    Sub-categories: M&A advisers, investment banks, corporate brokers, due diligence advisers
+    Rationale: Highly sensitive commercially; conflict of interest risk; board-level engagement required.
+
+  CAT-T3-006: International Suppliers (Non-UK/Non-EEA)
+    Sub-categories: Any goods or services sourced from suppliers headquartered outside the UK and EEA
+    Rationale: Enhanced sanctions screening; data residency risk; modern slavery supply chain risk. Legal review of applicable governing law required.
+
+6. NOT APPROVED CATEGORIES
+
+The following categories are outside the scope of permitted vendor engagement. Submissions in these categories will be rejected without further review.
+
+  CAT-NA-001: Cryptocurrency and Digital Asset Services
+    Includes: Cryptocurrency exchanges, crypto wallet providers, blockchain-based payment processors, DeFi platforms, NFT platforms, crypto mining services, cryptocurrency investment advisory, cryptocurrency portfolio analytics, on-chain data intelligence, distributed ledger verification services, blockchain-based data verification
+
+  CAT-NA-002: Online Gambling & Betting
+    Includes: Online casino operators, sports betting platforms, lottery services, gaming software for gambling purposes
+
+  CAT-NA-003: Tobacco and Tobacco Alternatives
+    Includes: Tobacco product suppliers, e-cigarette and vaping product suppliers for resale
+
+  CAT-NA-004: Weapons, Defence Ordnance & Lethal Autonomous Systems
+    Includes: Firearms suppliers, ammunition, weapons components, cluster munitions, lethal autonomous weapons systems
+
+  CAT-NA-005: Payday Lending & High-Cost Short-Term Credit
+    Includes: Payday loan providers, high-cost credit products, unregulated lending platforms, rent-to-own schemes
+
+  CAT-NA-006: Adult Content Services
+    Includes: Adult entertainment platforms, adult content creation services, adult product retail
+
+  CAT-NA-007: Multi-Level Marketing (MLM) Structures
+    Includes: Any supplier whose primary commercial model involves recruitment-based commission structures
+
+  CAT-NA-008: Unregulated Investment Products
+    Includes: Unregulated collective investment schemes, unauthorised financial promotions, exotic/speculative investment product vendors not FCA-authorised
+
+7. CATEGORY REVIEW
+
+Category assignments are reviewed annually. Business units may request reclassification by submitting a Category Review Request to the Head of Procurement. Reclassification of a Not Approved category requires Board approval.
+
+Document Owner: Head of Procurement | procurement@flatrocktech.co.uk
+Next Review: 31 January 2026

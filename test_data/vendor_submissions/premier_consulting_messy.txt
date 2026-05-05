@@ -1,0 +1,162 @@
+PRE Ml ER  BUS|NESS CONSULT1NG
+New  Supp|ier Reg istration  -- Fl at Rock T echnol ogy  Ltd
+
+[Page scan quality: POOR -- document appears to be a photocopy of a fax]
+
+- - - - - - - - - -- - - -- -- - - - - -- - -- -  - -  -- -
+
+SECT|ON 1 :  C0MPANY DET A|LS
+
+Legal  Nam e:    Premier Business Consulting
+                (NOTE: unable to confirm Ltd / LLP status from scan)
+Comp any  Reg  No:   1234  56 78
+                     [partially obscured -- possible leading digit missing]
+VAT Number :    GB 1 9 1   [remainder smudged / illegible]
+Reg istered  Address:
+     Sut ie  4,   K ingsley  H ouse
+     [street number illegible]  Whitfield  S treet
+     L ond on
+     W1 T  [postcode partially cut off]
+
+Trading Addr ess:     Sam e as above  (we think -- unclear from  original)
+
+Nat ur e  of  Bus iness:     Manag ement  consul ting,  busin ess  str ategy,
+                             organisat ional change ,  interim  manag ement.
+
+Year  Est abl ished:    2 01 [digit cut off -- possibly 2014 or 2018]
+
+- - - -- - - -- - - - - - -- - - - - - - -- - - - - - - - -
+
+S ECTION 2:    C ON TACT  DETA|LS
+
+Pr im ary  Cont act:    Robert  [surname  partially  legible  --  appears  to
+                        read "Chalm--" or "Chalm ers"]
+T itle:                Manag ing  Consultant  / Di re ctor
+Ema il:                r.cha [remainder of email cut off in scan]
+                        @premierconsult ing.co .uk  (domain  assumed)
+Te leph one:           020  7[rest of number  illegible]
+
+Finance Cont act:      [name  field  appears  blank  or  not  completed]
+Email:                 finance@ [domain  cut off]
+
+- - - -- - - - - -- - - --- - - - -- --- -- - --  - - - - - -
+
+SECT ION 3:    BAN K  DETA| LS
+
+Bank Name :            [field  left  blank or  illegible  in scan ]
+Acc ount  Nam e:       Premier Busi ness  Consul ting
+Sort Code :            [NOT  FOUND  IN  DOCUMENT]
+Acc ount  Number:      [NOT  FOUND  IN  DOCUMEN T]
+
+NOTE  to  Procurement:  Vendor  has  NOT  provided  bank  account  details.
+This  field  appears  either  incomplete  or  was  on  a  separate  page
+not  included  in  the  scanned  submission.
+
+- - - -- - - - - - -- - -- - --- - -- --- -- -- - - - - - - -
+
+SECTI0N 4:    PROPOS ED  ENGAGEMENT
+
+Se rvices  to  be  Provi ded:
+
+Prem ier  Busi ness  Consu lting  prop oses  to  supp ort  Flat  Rock
+Tec hnol ogy  with  [text  block  partially  obscured]...  organisational
+design  rev iew  and ...  [3-4 lines illegible] ...  change  management
+programme  supp ort  over  app rox imately  6  mont hs.
+
+Proposed  Cont ract  Val ue:     approx  25k
+                                 [no  further  breakdown  provided]
+Contract  Term:                  [not  specified  clearly -- appears  to
+                                  read  "6  months  or  as  agreed"]
+Payment  Terms:                  30  days  [net  or  from  invoice?
+                                  wording  unclear]
+FRT Internal  Contact:           [name  illegible]
+
+- - - -- - - - -- - -- - --- - - - - -- - -- - - - - - - - - -
+
+SECTI0N 5:    COMPL|ANCE  &  CERT| F| CAT| ONS
+
+Healt h  &  Safety:              Policy  held  --  [no  certificate  ref
+                                  or  cert  body  named]
+
+Prof essional  Body  Membership:  [field  appears  blank  or  not  completed;
+                                   possibly  "CMI"  member  but  text  cut off]
+
+GDPR:                            "We  take  data  protection  seriously
+                                  and  comply  with  GDPR."
+                                  [no  ICO  reg  number  provided;  DPA
+                                  not  included  with  submission]
+
+Modern  Sla very:                Decl aration  [checkbox  appears  ticked
+                                  but  separate  signed  page  NOT  found
+                                  in scanned bundle]
+
+- - - -- - - - -- - -- - --- - - - - -- - -- - - - - - - - - -
+
+SECTION  6:    INSUR ANCE  DET A| LS
+
+[Note:  Insurance  section  is  the  worst  affected  by  scan  quality.
+ Some  certificate  details  provided  verbally  in  covering  email
+ but  no  certificates  attached  to  scanned  document.]
+
+Public  Liability:    "adequate  publ ic  liability  coverage  held"
+                       [no  insurer  named,  no  policy  number,  no
+                        coverage  amount,  no  expiry  date  provided]
+
+Employer's Liabi lity:  [amount  smudged -- reads  as  either  5m  or  8m,
+                          cannot  confirm]  -- RSA  Insur ance
+                          Policy  per iod:  [month  illegible]  2025
+                          to  [month  illegible]  2026
+
+Prof essional  Indemnity:
+                       "PI  cover  in  place  -- deta ils  to  follow"
+                        [no  certificate,  no  insurer,  no  amount]
+
+Certif icates  attache d:     [checkbox  section  largely  illegible;
+                               it  is  unclear  which  certificates,
+                               if  any,  were  included  with  the
+                               original  pre-scan  document]
+
+- - - -- - - - -- - -- - --- - - - - -- - -- - - - - - - - - -
+
+SECTION  7:    DEC LAR AT|ONS
+
+[X?]  Not  sub ject  to  financi al  san ctions  [tick  mark  present
+       but  document  damaged  in  this  area]
+[ ]   CCJ  decl aration  --  [response  missing  or  not  legible]
+[X?]  Bribery  Act  comp liance  [appears  ticked]
+      Other  decl arations:  [rest  of  section  cut  off  at  page  edge]
+
+- - - -- - - - -- - -- - --- - - - - -- - -- - - - - - - - - -
+
+S ECTI ON  8:    SIG NATU RE
+
+Signed:    R.  Chalm--  [signature  present  but  name  not  fully  legible]
+Title:     Manag ing  Director  / Consult ant
+Date:      [date  smudged  --  appears  to  read  Marc h  or  May  2025,
+            cannot  confirm  year  with  certainty]
+
+- - - -- - - - -- - -- - --- - - - - -- - -- - - - - - - - - -
+
+DOCUMEN TS  ENCL OSED:
+
+[ ]  Certif icate  of  Incorp oration  --  NOT  FOUND  IN  SCAN
+[ ]  VAT  Certi ficate  --  NOT  FOUND  IN  SCAN
+[ ]  Ins urance  Cert ificates  --  UNCLEAR  (see  notes  above)
+[ ]  Signed  Code  of  Conduct  --  NOT  FOUND  IN  SCAN
+[ ]  Bank  Detail s  --  NOT  PROVIDED
+
+Covering  email  from  sender  r.chalm[...]@  stated:
+"Please  find  attached  our  supplier  registr ation  form,  scanned
+from  our  file.  Let  me  know  if  you  need  anything  else.
+Happy  to  discuss  further -- Robert."
+
+[END  OF  SCANNED  DOCUMENT]
+
+- - - -- - - - -- - -- - --- - - - - -- - -- - - - - - - - - -
+Premier  Business  Consulting  |  Reg.  No.  1234  56 78  (unconfirmed)
+London  W1T  [postcode  incomplete]
+
+EXPECTED ROUTING: FLAG_FOR_REVIEW (MEDIUM)
+Reason: LOW_CONFIDENCE_EXTRACTION — OCR artifacts throughout, garbled company reg,
+        missing bank details, vague insurance statements, ambiguous contact info.
+        Also: MISSING_BANK_DETAILS flag expected.

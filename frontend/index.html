@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Onboarding Agent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    [x-cloak] { display: none; }
+    .nav-active { background: #1e293b; color: #fff; }
+    .nav-active svg { color: #38bdf8; }
+    .spin { animation: spin 1s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .fade-in { animation: fadeIn 0.2s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+    ::-webkit-scrollbar { width: 6px; } ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 99px; }
+  </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-900 antialiased">
+
+<div class="flex h-screen overflow-hidden">
+
+  <!-- ── SIDEBAR ───────────────────────────────────────────────────── -->
+  <aside class="w-56 bg-slate-900 flex flex-col flex-shrink-0 z-10">
+    <!-- Brand -->
+    <div class="px-4 py-5 border-b border-slate-800">
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-sky-500 flex items-center justify-center flex-shrink-0">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="text-white font-semibold text-sm leading-tight">Vendor Onboarding</div>
+          <div class="text-slate-500 text-xs">AI Agent</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nav -->
+    <nav class="flex-1 px-3 py-4 space-y-0.5">
+      <button onclick="nav('dashboard')" id="nav-dashboard" class="nav-link w-full flex items-center gap-3 px-3 py-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors text-sm text-left">
+        <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+        Dashboard
+      </button>
+      <button onclick="nav('submit')" id="nav-submit" class="nav-link w-full flex items-center gap-3 px-3 py-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors text-sm text-left">
+        <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+        Submit Document
+      </button>
+      <button onclick="nav('vendors')" id="nav-vendors" class="nav-link w-full flex items-center gap-3 px-3 py-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors text-sm text-left">
+        <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+        Vendor Records
+      </button>
+      <button onclick="nav('review')" id="nav-review" class="nav-link w-full flex items-center gap-3 px-3 py-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors text-sm text-left">
+        <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+        Review Queue
+        <span id="pending-badge" class="ml-auto bg-amber-500 text-white text-xs font-bold min-w-5 h-5 px-1 rounded-full hidden flex items-center justify-center"></span>
+      </button>
+    </nav>
+
+    <!-- Health -->
+    <div class="px-4 py-4 border-t border-slate-800">
+      <div class="flex items-center gap-2">
+        <div id="health-dot" class="w-2 h-2 rounded-full bg-slate-600 flex-shrink-0"></div>
+        <span id="health-label" class="text-slate-500 text-xs">Connecting…</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ── MAIN ──────────────────────────────────────────────────────── -->
+  <main class="flex-1 overflow-auto">
+    <div id="page" class="p-8 fade-in"></div>
+  </main>
+</div>
+
+<!-- ── MODAL ─────────────────────────────────────────────────────── -->
+<div id="modal-overlay" class="fixed inset-0 bg-black/50 z-50 hidden items-center justify-center p-4" onclick="if(event.target===this)closeModal()">
+  <div class="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto" onclick="event.stopPropagation()">
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<!-- ── TOAST ──────────────────────────────────────────────────────── -->
+<div id="toast" class="fixed bottom-6 right-6 z-50 pointer-events-none">
+  <div id="toast-inner" class="px-4 py-3 rounded-xl shadow-xl text-sm font-medium text-white opacity-0 transition-opacity duration-300"></div>
+</div>
+
+<script>
+const API = '';
+
+// ═══════════════════════════════════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════════════════════════════════
+let currentPage = '';
+let vendorPage = 1, vendorFilter = '';
+let reviewPage = 1, reviewFilter = '';
+let selectedFile = null;
+
+// ═══════════════════════════════════════════════════════════════════
+// HTTP HELPERS
+// ═══════════════════════════════════════════════════════════════════
+async function get(path) {
+  const r = await fetch(API + path);
+  if (!r.ok) { const e = await r.json().catch(() => ({})); throw e; }
+  return r.json();
+}
+async function post(path, body) {
+  const r = await fetch(API + path, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+  if (!r.ok) { const e = await r.json().catch(() => ({})); throw e; }
+  return r.json();
+}
+async function upload(path, formData) {
+  const r = await fetch(API + path, { method: 'POST', body: formData });
+  if (!r.ok) { const e = await r.json().catch(() => ({})); throw e; }
+  return r.json();
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// UI UTILITIES
+// ═══════════════════════════════════════════════════════════════════
+const $ = id => document.getElementById(id);
+
+function fmt(v)         { return v != null && v !== '' ? v : '—'; }
+function fmtGbp(v)      { return v != null ? '£' + Number(v).toLocaleString('en-GB', { minimumFractionDigits: 0, maximumFractionDigits: 0 }) : '—'; }
+function fmtPct(v)      { return v != null ? Math.round(v * 100) + '%' : '—'; }
+function fmtDate(v)     { return v ? new Date(v).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }) : '—'; }
+function parseJson(s)   { try { return Array.isArray(s) ? s : JSON.parse(s || '[]'); } catch { return []; } }
+
+function tierBadge(t) {
+  const styles = { TIER_1: 'bg-emerald-100 text-emerald-700', TIER_2: 'bg-sky-100 text-sky-700', TIER_3: 'bg-amber-100 text-amber-700', NOT_APPROVED: 'bg-red-100 text-red-700', UNKNOWN: 'bg-slate-100 text-slate-500' };
+  const s = styles[t] || styles.UNKNOWN;
+  return `<span class="inline-flex px-2 py-0.5 rounded-md text-xs font-semibold ${s}">${t || 'UNKNOWN'}</span>`;
+}
+function priorityBadge(p) {
+  const styles = { HIGH: 'bg-red-100 text-red-700', MEDIUM: 'bg-amber-100 text-amber-700', LOW: 'bg-emerald-100 text-emerald-700' };
+  return `<span class="inline-flex px-2 py-0.5 rounded-md text-xs font-semibold ${styles[p] || 'bg-slate-100 text-slate-500'}">${p || '—'}</span>`;
+}
+function boolIcon(v)    { return v === true ? '<span class="text-emerald-500">✓</span>' : v === false ? '<span class="text-red-400">✗</span>' : '<span class="text-slate-300">—</span>'; }
+
+function confidenceBar(v) {
+  if (v == null) return '<span class="text-slate-300 text-xs">—</span>';
+  const pct = Math.round(v * 100);
+  const col = pct >= 80 ? 'bg-emerald-500' : pct >= 60 ? 'bg-amber-400' : 'bg-red-400';
+  return `<div class="flex items-center gap-1.5 min-w-0"><div class="flex-1 h-1.5 bg-slate-100 rounded-full overflow-hidden"><div class="${col} h-full rounded-full" style="width:${pct}%"></div></div><span class="text-xs text-slate-500 tabular-nums w-7 text-right">${pct}%</span></div>`;
+}
+
+function flagPills(raw, compact = false) {
+  const flags = parseJson(raw);
+  if (!flags.length) return '<span class="text-slate-400 text-xs">none</span>';
+  return flags.map(f => `<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-slate-100 text-slate-600 mr-1 mb-1">${f.replace(/_/g, ' ')}</span>`).join('');
+}
+
+function kv(label, val, span = false) {
+  return `<div class="${span ? 'col-span-2' : ''}"><dt class="text-xs text-slate-400 font-medium mb-0.5">${label}</dt><dd class="text-sm text-slate-800 font-medium truncate" title="${val || ''}">${val || '<span class="text-slate-300">—</span>'}</dd></div>`;
+}
+function kvBool(label, val) {
+  return `<div><dt class="text-xs text-slate-400 font-medium mb-0.5">${label}</dt><dd class="text-sm">${boolIcon(val)}</dd></div>`;
+}
+
+function showToast(msg, type = 'success') {
+  const colours = { success: 'bg-emerald-600', error: 'bg-red-600', info: 'bg-sky-600' };
+  // legacy boolean support: showToast(msg, true/false)
+  if (type === true)  type = 'success';
+  if (type === false) type = 'error';
+  const inner = $('toast-inner');
+  inner.textContent = msg;
+  inner.className = `px-4 py-3 rounded-xl shadow-xl text-sm font-medium text-white transition-opacity duration-300 ${colours[type] || colours.success}`;
+  inner.style.opacity = 1;
+  clearTimeout(inner._t);
+  inner._t = setTimeout(() => inner.style.opacity = 0, 4000);
+}
+
+function showModal(html) {
+  $('modal-body').innerHTML = html;
+  $('modal-overlay').classList.remove('hidden');
+  $('modal-overlay').classList.add('flex');
+}
+function closeModal() {
+  $('modal-overlay').classList.add('hidden');
+  $('modal-overlay').classList.remove('flex');
+}
+
+function renderPagination(containerId, page, total, size, loadFn) {
+  const el = $(containerId);
+  if (!el) return;
+  const pages = Math.ceil(total / size);
+  const start = (page - 1) * size + 1, end = Math.min(page * size, total);
+  if (pages <= 1) {
+    el.innerHTML = total ? `<span class="text-xs text-slate-400">${total} record${total !== 1 ? 's' : ''}</span>` : '';
+    return;
+  }
+  el.innerHTML = `
+    <span class="text-xs text-slate-400">${start}–${end} of ${total}</span>
+    <div class="flex gap-1">
+      <button onclick="${loadFn.name}(${page - 1})" ${page <= 1 ? 'disabled' : ''} class="px-2.5 py-1 text-xs rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-50 disabled:opacity-30 disabled:cursor-not-allowed">‹ Prev</button>
+      <button onclick="${loadFn.name}(${page + 1})" ${page >= pages ? 'disabled' : ''} class="px-2.5 py-1 text-xs rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-50 disabled:opacity-30 disabled:cursor-not-allowed">Next ›</button>
+    </div>`;
+}
+
+function loading(msg = 'Loading…') {
+  return `<div class="py-16 flex flex-col items-center gap-3 text-slate-400">
+    <div class="w-6 h-6 border-2 border-slate-300 border-t-sky-500 rounded-full spin"></div>
+    <span class="text-sm">${msg}</span>
+  </div>`;
+}
+function empty(msg) {
+  return `<div class="py-16 text-center text-slate-400 text-sm">${msg}</div>`;
+}
+function errMsg(e) {
+  return e?.detail || e?.message || JSON.stringify(e);
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// NAVIGATION
+// ═══════════════════════════════════════════════════════════════════
+function nav(page) {
+  currentPage = page;
+  document.querySelectorAll('.nav-link').forEach(el => {
+    el.classList.remove('nav-active');
+    el.classList.add('text-slate-400');
+  });
+  const a = $(`nav-${page}`);
+  if (a) { a.classList.add('nav-active'); a.classList.remove('text-slate-400'); }
+  $('page').className = 'p-8 fade-in';
+  void $('page').offsetWidth;
+  ({ dashboard: renderDashboard, submit: renderSubmit, vendors: renderVendors, review: renderReview }[page] || renderDashboard)();
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// HEALTH
+// ═══════════════════════════════════════════════════════════════════
+async function checkHealth() {
+  try {
+    const h = await get('/health');
+    const ok = h.status === 'ok';
+    $('health-dot').className = `w-2 h-2 rounded-full flex-shrink-0 ${ok ? 'bg-emerald-400' : 'bg-amber-400'}`;
+    $('health-label').textContent = ok ? 'API Online' : 'API Degraded';
+  } catch {
+    $('health-dot').className = 'w-2 h-2 rounded-full flex-shrink-0 bg-red-500';
+    $('health-label').textContent = 'API Offline';
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// DASHBOARD
+// ═══════════════════════════════════════════════════════════════════
+async function renderDashboard() {
+  $('page').innerHTML = loading();
+  try {
+    const [stats, vendors, reviews] = await Promise.all([
+      get('/review/stats'),
+      get('/vendors?page=1&page_size=6'),
+      get('/review?page=1&page_size=6'),
+    ]);
+
+    const pb = $('pending-badge');
+    if (stats.pending > 0) { pb.textContent = stats.pending; pb.classList.remove('hidden'); }
+    else pb.classList.add('hidden');
+
+    $('page').innerHTML = `
+      <div class="mb-7">
+        <h1 class="text-2xl font-bold text-slate-900">Dashboard</h1>
+        <p class="text-slate-500 text-sm mt-1">Vendor onboarding pipeline overview</p>
+      </div>
+
+      <!-- Stat cards -->
+      <div class="grid grid-cols-4 gap-4 mb-8">
+        ${statCard('Approved Vendors', vendors.total, 'text-slate-900', 'Active records', 'emerald')}
+        ${statCard('Pending Review', stats.pending, 'text-amber-600', 'Awaiting decision', 'amber')}
+        ${statCard('High Priority', stats.pending_by_priority?.HIGH ?? 0, 'text-red-600', 'Urgent attention', 'red')}
+        ${statCard('Total Processed', stats.total, 'text-slate-900', `${stats.approved} approved · ${stats.rejected} rejected`, 'slate')}
+      </div>
+
+      <!-- Recent panels -->
+      <div class="grid grid-cols-2 gap-6">
+        <div class="bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden">
+          <div class="px-5 py-4 border-b border-slate-100 flex items-center justify-between">
+            <h2 class="text-sm font-semibold text-slate-800">Recent Vendors</h2>
+            <button onclick="nav('vendors')" class="text-xs text-sky-600 hover:text-sky-800 font-medium">View all →</button>
+          </div>
+          ${vendors.items.length
+            ? vendors.items.map(v => `
+              <div class="px-5 py-3 flex items-center justify-between hover:bg-slate-50 cursor-pointer border-b border-slate-50 last:border-0" onclick="openVendorModal('${v.id}')">
+                <div class="min-w-0">
+                  <div class="text-sm font-medium text-slate-800 truncate">${fmt(v.company_name)}</div>
+                  <div class="text-xs text-slate-400 truncate">${fmt(v.service_category)}</div>
+                </div>
+                <div class="ml-3 flex-shrink-0">${tierBadge(v.category_tier)}</div>
+              </div>`).join('')
+            : empty('No vendors yet')}
+        </div>
+
+        <div class="bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden">
+          <div class="px-5 py-4 border-b border-slate-100 flex items-center justify-between">
+            <h2 class="text-sm font-semibold text-slate-800">Pending Reviews</h2>
+            <button onclick="nav('review')" class="text-xs text-sky-600 hover:text-sky-800 font-medium">View all →</button>
+          </div>
+          ${reviews.items.length
+            ? reviews.items.map(r => `
+              <div class="px-5 py-3 flex items-center justify-between hover:bg-slate-50 cursor-pointer border-b border-slate-50 last:border-0" onclick="openReviewModal('${r.id}')">
+                <div class="min-w-0">
+                  <div class="text-sm font-medium text-slate-800 truncate">${fmt(r.company_name)}</div>
+                  <div class="text-xs text-slate-400 truncate max-w-48" title="${r.routing_reason || ''}">${fmt(r.routing_reason)}</div>
+                </div>
+                <div class="ml-3 flex-shrink-0">${priorityBadge(r.review_priority)}</div>
+              </div>`).join('')
+            : empty('Queue is clear')}
+        </div>
+      </div>
+    `;
+  } catch (e) {
+    $('page').innerHTML = `<div class="text-red-600 text-sm bg-red-50 rounded-xl p-5">Failed to load dashboard: ${errMsg(e)}</div>`;
+  }
+}
+
+function statCard(label, value, valueClass, sub, accent) {
+  const accents = { emerald: 'bg-emerald-50 text-emerald-600', amber: 'bg-amber-50 text-amber-600', red: 'bg-red-50 text-red-500', slate: 'bg-slate-50 text-slate-500' };
+  return `<div class="bg-white rounded-xl border border-slate-100 shadow-sm p-5">
+    <div class="text-xs font-semibold text-slate-400 uppercase tracking-wide">${label}</div>
+    <div class="text-3xl font-bold mt-2 ${valueClass}">${value}</div>
+    <div class="text-xs mt-1.5 font-medium px-2 py-0.5 rounded-md inline-block ${accents[accent]}">${sub}</div>
+  </div>`;
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// SUBMIT DOCUMENT
+// ═══════════════════════════════════════════════════════════════════
+function renderSubmit() {
+  $('page').innerHTML = `
+    <div class="mb-7">
+      <h1 class="text-2xl font-bold text-slate-900">Submit Document</h1>
+      <p class="text-slate-500 text-sm mt-1">Upload a vendor onboarding document to run through the AI pipeline</p>
+    </div>
+
+    <div class="max-w-xl">
+      <div class="bg-white rounded-xl border border-slate-100 shadow-sm p-6">
+
+        <!-- Drop zone -->
+        <div id="drop-zone"
+          class="border-2 border-dashed border-slate-200 rounded-xl p-10 text-center cursor-pointer hover:border-sky-400 hover:bg-sky-50/50 transition-all"
+          onclick="$('file-input').click()"
+          ondragover="event.preventDefault();this.classList.add('border-sky-400','bg-sky-50')"
+          ondragleave="this.classList.remove('border-sky-400','bg-sky-50')"
+          ondrop="handleDrop(event)">
+          <svg class="w-10 h-10 text-slate-300 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
+          </svg>
+          <p class="text-sm font-medium text-slate-600">Drop file here or <span class="text-sky-600">browse</span></p>
+          <p class="text-xs text-slate-400 mt-1">PDF · Images · CSV · XLSX · DOCX · TXT</p>
+          <p id="file-name" class="hidden mt-3 text-sm font-semibold text-sky-700 bg-sky-50 rounded-lg px-3 py-1.5 inline-block"></p>
+        </div>
+        <input id="file-input" type="file" class="hidden" accept=".pdf,.png,.jpg,.jpeg,.tiff,.bmp,.txt,.csv,.xlsx,.xls,.docx" onchange="onFileSelect(event)">
+
+        <div class="mt-4 space-y-1">
+          <label class="text-sm font-medium text-slate-700">Sender Email</label>
+          <input id="sender-email" type="email" value="test@example.com"
+            class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent">
+        </div>
+
+        <button id="submit-btn" onclick="submitDocument()"
+          class="mt-4 w-full bg-sky-600 hover:bg-sky-700 active:scale-[0.99] text-white font-semibold py-2.5 rounded-lg text-sm transition-all disabled:opacity-50 disabled:cursor-not-allowed">
+          Process Document
+        </button>
+      </div>
+
+      <div id="result-panel" class="mt-5"></div>
+    </div>
+  `;
+}
+
+function onFileSelect(e) {
+  selectedFile = e.target.files[0];
+  updateFileName();
+}
+function handleDrop(e) {
+  e.preventDefault();
+  $('drop-zone').classList.remove('border-sky-400', 'bg-sky-50');
+  selectedFile = e.dataTransfer.files[0];
+  updateFileName();
+}
+function updateFileName() {
+  if (!selectedFile) return;
+  const p = $('file-name');
+  p.textContent = '📎 ' + selectedFile.name;
+  p.classList.remove('hidden');
+}
+
+async function submitDocument() {
+  if (!selectedFile) { showToast('Please select a file first', false); return; }
+  const btn = $('submit-btn');
+  btn.disabled = true; btn.textContent = 'Processing…';
+  $('result-panel').innerHTML = `
+    <div class="bg-white rounded-xl border border-slate-100 shadow-sm p-8 text-center">
+      <div class="w-8 h-8 border-2 border-sky-500 border-t-transparent rounded-full spin mx-auto mb-3"></div>
+      <p class="text-sm text-slate-500 font-medium">Running AI pipeline…</p>
+      <p class="text-xs text-slate-400 mt-1">This usually takes 20–60 seconds</p>
+    </div>`;
+  try {
+    const fd = new FormData();
+    fd.append('file', selectedFile);
+    fd.append('sender_email', $('sender-email').value || 'test@example.com');
+    const r = await upload('/process/manual', fd);
+    renderSubmitResult(r);
+  } catch (e) {
+    $('result-panel').innerHTML = `
+      <div class="bg-red-50 border border-red-200 rounded-xl p-5 text-sm text-red-700">
+        <div class="font-semibold mb-1">Pipeline failed</div>
+        <div class="font-mono text-xs">${errMsg(e)}</div>
+      </div>`;
+  } finally {
+    btn.disabled = false; btn.textContent = 'Process Document';
+  }
+}
+
+function renderSubmitResult(r) {
+  const approved = r.routing_decision === 'AUTO_APPROVE';
+  const comp = r.company || {}, svc = r.services || {}, bank = r.banking || {}, cmp = r.compliance || {};
+  $('result-panel').innerHTML = `
+    <div class="bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden">
+      <!-- Decision -->
+      <div class="px-6 py-4 ${approved ? 'bg-emerald-50 border-b border-emerald-100' : 'bg-amber-50 border-b border-amber-100'}">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <div class="font-bold text-base ${approved ? 'text-emerald-700' : 'text-amber-700'}">
+              ${approved ? '✅ Auto-Approved' : '⚠️ Flagged for Review'}
+            </div>
+            <div class="text-xs ${approved ? 'text-emerald-600' : 'text-amber-600'} mt-0.5">${fmt(r.routing_reason)}</div>
+          </div>
+          <div class="text-right flex-shrink-0">
+            ${tierBadge(r.category_tier)}
+            <div class="text-xs text-slate-500 mt-1">Confidence: <span class="font-semibold">${fmtPct(r.overall_confidence_score)}</span></div>
+          </div>
+        </div>
+        ${parseJson(r.routing_flags).length ? `<div class="mt-3">${flagPills(r.routing_flags)}</div>` : ''}
+      </div>
+
+      <!-- Fields -->
+      <div class="p-6 grid grid-cols-2 gap-6">
+        <div>
+          <div class="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-3">Company</div>
+          <dl class="space-y-2.5">${kv('Name', comp.company_name)}${kv('Reg. Number', comp.company_registration_number)}${kv('VAT Number', comp.vat_number)}${kv('Country', comp.country_of_incorporation)}</dl>
+        </div>
+        <div>
+          <div class="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-3">Services</div>
+          <dl class="space-y-2.5">${kv('Category', svc.service_category)}${kv('Contract Value', fmtGbp(svc.contract_value_gbp))}${kv('Start Date', svc.contract_start_date)}${kv('Payment Terms', svc.payment_terms_days ? svc.payment_terms_days + ' days' : null)}</dl>
+        </div>
+        <div>
+          <div class="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-3">Banking</div>
+          <dl class="space-y-2.5">${kv('Bank', bank.bank_name)}${kv('Account Holder', bank.account_holder_name)}${kv('Sort Code', bank.sort_code)}${kv('Account No.', bank.account_number)}</dl>
+        </div>
+        <div>
+          <div class="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-3">Compliance</div>
+          <dl class="space-y-2.5">${kvBool('GDPR / DPA', cmp.has_gdpr_dpa)}${kvBool('ISO 27001', cmp.has_iso_27001)}${kvBool('Cyber Essentials', cmp.has_cyber_essentials)}${kvBool('Public Liability', cmp.has_public_liability_insurance)}${kv('Insurance Expiry', cmp.insurance_expiry_date)}</dl>
+        </div>
+      </div>
+
+      ${r.rag_enrichment_notes ? `
+        <div class="px-6 pb-5">
+          <div class="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">Policy Notes</div>
+          <p class="text-sm text-slate-600 bg-slate-50 rounded-lg p-3 leading-relaxed">${r.rag_enrichment_notes}</p>
+        </div>` : ''}
+    </div>
+  `;
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// VENDOR RECORDS
+// ═══════════════════════════════════════════════════════════════════
+function renderVendors() {
+  $('page').innerHTML = `
+    <div class="mb-7 flex items-center justify-between gap-4">
+      <div>
+        <h1 class="text-2xl font-bold text-slate-900">Vendor Records</h1>
+        <p class="text-slate-500 text-sm mt-1">Approved vendor registry</p>
+      </div>
+      <div class="flex gap-2">
+        <input id="vendor-filter" type="text" placeholder="Filter by category…"
+          class="border border-slate-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent w-48"
+          onkeydown="if(event.key==='Enter')loadVendors(1)">
+        <button onclick="loadVendors(1)" class="bg-sky-600 text-white px-3 py-1.5 rounded-lg text-sm font-medium hover:bg-sky-700 transition-colors">Search</button>
+        <button onclick="clearVendorFilter()" class="border border-slate-200 text-slate-600 px-3 py-1.5 rounded-lg text-sm font-medium hover:bg-slate-50 transition-colors">Clear</button>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden">
+      <div id="vendor-body">${loading()}</div>
+      <div id="vendor-pager" class="px-5 py-3 border-t border-slate-100 flex items-center justify-between min-h-[48px]"></div>
+    </div>`;
+  loadVendors(1);
+}
+
+function clearVendorFilter() { $('vendor-filter').value = ''; loadVendors(1); }
+
+async function loadVendors(page) {
+  vendorPage = page;
+  vendorFilter = $('vendor-filter')?.value || '';
+  $('vendor-body').innerHTML = loading();
+  try {
+    const qs = new URLSearchParams({ page, page_size: 15 });
+    if (vendorFilter) qs.set('category', vendorFilter);
+    const data = await get(`/vendors?${qs}`);
+    if (!data.items.length) { $('vendor-body').innerHTML = empty('No vendor records found'); $('vendor-pager').innerHTML = ''; return; }
+    $('vendor-body').innerHTML = `
+      <table class="w-full text-sm">
+        <thead class="bg-slate-50">
+          <tr class="text-xs font-semibold text-slate-400 uppercase tracking-wide">
+            <th class="px-5 py-3 text-left">Company</th>
+            <th class="px-5 py-3 text-left">Category</th>
+            <th class="px-5 py-3 text-right">Contract Value</th>
+            <th class="px-5 py-3 text-center">Tier</th>
+            <th class="px-5 py-3 text-left w-36">Confidence</th>
+            <th class="px-5 py-3 text-left">Added</th>
+            <th class="px-5 py-3"></th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-50">
+          ${data.items.map(v => `
+            <tr class="hover:bg-slate-50 cursor-pointer transition-colors" onclick="openVendorModal('${v.id}')">
+              <td class="px-5 py-3 font-medium text-slate-900">${fmt(v.company_name)}</td>
+              <td class="px-5 py-3 text-slate-500 max-w-[160px] truncate">${fmt(v.service_category)}</td>
+              <td class="px-5 py-3 text-right font-medium text-slate-700">${fmtGbp(v.contract_value_gbp)}</td>
+              <td class="px-5 py-3 text-center">${tierBadge(v.category_tier)}</td>
+              <td class="px-5 py-3">${confidenceBar(v.overall_confidence_score)}</td>
+              <td class="px-5 py-3 text-slate-400 text-xs">${fmtDate(v.created_at)}</td>
+              <td class="px-5 py-3 text-right text-xs text-sky-600 font-medium">View →</td>
+            </tr>`).join('')}
+        </tbody>
+      </table>`;
+    renderPagination('vendor-pager', page, data.total, 15, loadVendors);
+  } catch (e) {
+    $('vendor-body').innerHTML = `<div class="p-6 text-red-600 text-sm">Error: ${errMsg(e)}</div>`;
+  }
+}
+
+async function openVendorModal(id) {
+  showModal(`<div class="p-6">${loading('Loading vendor…')}</div>`);
+  try {
+    const v = await get(`/vendors/${id}`);
+    showModal(`
+      <div class="p-6">
+        <div class="flex items-start justify-between gap-3 mb-5">
+          <div>
+            <h2 class="text-xl font-bold text-slate-900">${fmt(v.company_name)}</h2>
+            ${v.trading_name ? `<p class="text-sm text-slate-500">Trading as: ${v.trading_name}</p>` : ''}
+          </div>
+          <div class="flex items-center gap-2 flex-shrink-0">
+            ${tierBadge(v.category_tier)}
+            <button onclick="closeModal()" class="text-slate-400 hover:text-slate-600 text-lg leading-none">✕</button>
+          </div>
+        </div>
+
+        <!-- Confidence + flags -->
+        <div class="flex items-center gap-4 mb-5 pb-5 border-b border-slate-100">
+          <div class="flex-1">${confidenceBar(v.overall_confidence_score)}</div>
+          <div class="text-xs text-slate-500">Status: <span class="font-semibold text-slate-700">${v.status}</span></div>
+          <div class="text-xs text-slate-500">Added: <span class="font-semibold text-slate-700">${fmtDate(v.created_at)}</span></div>
+        </div>
+
+        ${parseJson(v.routing_flags).length ? `<div class="mb-5">${flagPills(v.routing_flags)}</div>` : ''}
+
+        <div class="grid grid-cols-2 gap-x-8 gap-y-4">
+          <div>
+            <div class="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-3">Company</div>
+            <dl class="space-y-2.5">${kv('Reg. Number', v.company_registration_number)}${kv('VAT Number', v.vat_number)}${kv('Country', v.country_of_incorporation)}</dl>
+          </div>
+          <div>
+            <div class="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-3">Contact</div>
+            <dl class="space-y-2.5">${kv('Name', v.primary_contact_name)}${kv('Email', v.primary_contact_email)}${kv('Postcode', v.company_address_postcode)}${kv('Country', v.company_address_country)}</dl>
+          </div>
+          <div>
+            <div class="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-3">Banking</div>
+            <dl class="space-y-2.5">${kv('Bank', v.bank_name)}${kv('Account Holder', v.account_holder_name)}${kv('Sort Code', v.sort_code)}${kv('Account No.', v.account_number)}${kv('IBAN', v.iban)}</dl>
+          </div>
+          <div>
+            <div class="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-3">Services</div>
+            <dl class="space-y-2.5">${kv('Category', v.service_category)}${kv('Value', fmtGbp(v.contract_value_gbp))}${kv('Start', v.contract_start_date)}${kv('End', v.contract_end_date)}${kv('Payment Terms', v.payment_terms_days ? v.payment_terms_days + ' days' : null)}</dl>
+          </div>
+          <div class="col-span-2">
+            <div class="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-3">Compliance</div>
+            <dl class="grid grid-cols-4 gap-3">${kvBool('GDPR / DPA', v.has_gdpr_dpa)}${kvBool('ISO 27001', v.has_iso_27001)}${kvBool('Cyber Essentials', v.has_cyber_essentials)}${kvBool('Public Liability', v.has_public_liability_insurance)}${kv('PL Amount', fmtGbp(v.public_liability_amount_gbp))}${kv('Ins. Expiry', v.insurance_expiry_date)}${kvBool('Prof. Indemnity', v.has_professional_indemnity)}${kv('PI Amount', fmtGbp(v.professional_indemnity_amount_gbp))}</dl>
+          </div>
+        </div>
+
+        ${v.rag_enrichment_notes ? `
+          <div class="mt-5 pt-5 border-t border-slate-100">
+            <div class="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">Policy Notes</div>
+            <p class="text-sm text-slate-600 bg-slate-50 rounded-lg p-3 leading-relaxed">${v.rag_enrichment_notes}</p>
+          </div>` : ''}
+
+        ${v.source_filename ? `<p class="text-xs text-slate-400 mt-4">Source file: ${v.source_filename}</p>` : ''}
+      </div>
+    `);
+  } catch (e) {
+    showToast('Failed to load vendor', false);
+    closeModal();
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// REVIEW QUEUE
+// ═══════════════════════════════════════════════════════════════════
+function renderReview() {
+  $('page').innerHTML = `
+    <div class="mb-7 flex items-start justify-between gap-4">
+      <div>
+        <h1 class="text-2xl font-bold text-slate-900">Review Queue</h1>
+        <p class="text-slate-500 text-sm mt-1">Vendor submissions requiring a human decision</p>
+      </div>
+      <div class="flex gap-1.5" id="priority-filters">
+        ${['ALL','HIGH','MEDIUM','LOW'].map(p => `
+          <button onclick="setReviewFilter('${p === 'ALL' ? '' : p}')"
+            id="rf-${p}"
+            class="px-3 py-1.5 rounded-lg text-xs font-semibold border transition-colors ${reviewFilter === (p === 'ALL' ? '' : p) ? 'bg-slate-800 text-white border-slate-800' : 'border-slate-200 text-slate-600 hover:bg-slate-50'}">
+            ${p}
+          </button>`).join('')}
+      </div>
+    </div>
+
+    <!-- Stats strip -->
+    <div id="review-stats" class="grid grid-cols-4 gap-3 mb-5"></div>
+
+    <div class="bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden">
+      <div id="review-body">${loading()}</div>
+      <div id="review-pager" class="px-5 py-3 border-t border-slate-100 flex items-center justify-between min-h-[48px]"></div>
+    </div>`;
+
+  loadReviewStats();
+  loadReview(1);
+}
+
+async function loadReviewStats() {
+  try {
+    const s = await get('/review/stats');
+    $('review-stats').innerHTML = `
+      ${miniStat(s.pending, 'Pending', 'text-amber-600')}
+      ${miniStat(s.pending_by_priority?.HIGH ?? 0, 'High Priority', 'text-red-600')}
+      ${miniStat(s.approved, 'Approved', 'text-emerald-600')}
+      ${miniStat(s.rejected, 'Rejected', 'text-slate-500')}`;
+    const pb = $('pending-badge');
+    if (s.pending > 0) { pb.textContent = s.pending; pb.classList.remove('hidden'); }
+    else pb.classList.add('hidden');
+  } catch {}
+}
+
+function miniStat(val, label, cls) {
+  return `<div class="bg-white rounded-xl border border-slate-100 shadow-sm p-4 text-center">
+    <div class="text-2xl font-bold ${cls}">${val}</div>
+    <div class="text-xs text-slate-400 font-medium mt-0.5">${label}</div>
+  </div>`;
+}
+
+function setReviewFilter(priority) {
+  reviewFilter = priority;
+  ['ALL','HIGH','MEDIUM','LOW'].forEach(p => {
+    const btn = $(`rf-${p}`);
+    if (!btn) return;
+    const active = reviewFilter === (p === 'ALL' ? '' : p);
+    btn.className = `px-3 py-1.5 rounded-lg text-xs font-semibold border transition-colors ${active ? 'bg-slate-800 text-white border-slate-800' : 'border-slate-200 text-slate-600 hover:bg-slate-50'}`;
+  });
+  loadReview(1);
+}
+
+async function loadReview(page) {
+  reviewPage = page;
+  $('review-body').innerHTML = loading();
+  try {
+    const qs = new URLSearchParams({ page, page_size: 15 });
+    if (reviewFilter) qs.set('priority', reviewFilter);
+    const data = await get(`/review?${qs}`);
+    if (!data.items.length) { $('review-body').innerHTML = empty('No items in queue'); $('review-pager').innerHTML = ''; return; }
+    $('review-body').innerHTML = `
+      <table class="w-full text-sm">
+        <thead class="bg-slate-50">
+          <tr class="text-xs font-semibold text-slate-400 uppercase tracking-wide">
+            <th class="px-5 py-3 text-left">Company</th>
+            <th class="px-5 py-3 text-left">Category</th>
+            <th class="px-5 py-3 text-right">Value</th>
+            <th class="px-5 py-3 text-center">Priority</th>
+            <th class="px-5 py-3 text-left">Reason</th>
+            <th class="px-5 py-3 text-left w-32">Confidence</th>
+            <th class="px-5 py-3 text-center">Action</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-50">
+          ${data.items.map(r => `
+            <tr class="hover:bg-slate-50 transition-colors">
+              <td class="px-5 py-3 font-medium text-slate-900 max-w-[140px] truncate">${fmt(r.company_name)}</td>
+              <td class="px-5 py-3 text-slate-500 max-w-[120px] truncate">${fmt(r.service_category)}</td>
+              <td class="px-5 py-3 text-right font-medium text-slate-700">${fmtGbp(r.contract_value_gbp)}</td>
+              <td class="px-5 py-3 text-center">${priorityBadge(r.review_priority)}</td>
+              <td class="px-5 py-3 text-xs text-slate-500 max-w-[200px] truncate" title="${r.routing_reason || ''}">${fmt(r.routing_reason)}</td>
+              <td class="px-5 py-3">${confidenceBar(r.overall_confidence_score)}</td>
+              <td class="px-5 py-3 text-center">
+                <button onclick="openReviewModal('${r.id}')"
+                  class="bg-sky-600 hover:bg-sky-700 text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors">
+                  Review
+                </button>
+              </td>
+            </tr>`).join('')}
+        </tbody>
+      </table>`;
+    renderPagination('review-pager', page, data.total, 15, loadReview);
+  } catch (e) {
+    $('review-body').innerHTML = `<div class="p-6 text-red-600 text-sm">Error: ${errMsg(e)}</div>`;
+  }
+}
+
+async function openReviewModal(id) {
+  showModal(`<div class="p-6">${loading('Loading submission…')}</div>`);
+  try {
+    const item = await get(`/review/${id}`);
+    const raw = (() => { try { return JSON.parse(item.raw_extraction_json || '{}'); } catch { return {}; } })();
+    const contact = raw.contact || {}, bank = raw.banking || {}, cmp = raw.compliance || {}, svc = raw.services || {};
+    showModal(`
+      <div class="p-6">
+        <!-- Header -->
+        <div class="flex items-start justify-between gap-3 mb-1">
+          <h2 class="text-xl font-bold text-slate-900">${fmt(item.company_name)}</h2>
+          <button onclick="closeModal()" class="text-slate-400 hover:text-slate-600 text-lg leading-none flex-shrink-0">✕</button>
+        </div>
+        <p class="text-sm text-slate-500 mb-4">${fmt(item.routing_reason)}</p>
+
+        <!-- Meta row -->
+        <div class="flex items-center gap-3 flex-wrap mb-4">
+          ${priorityBadge(item.review_priority)}
+          <span class="text-xs text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md font-medium">Confidence: ${fmtPct(item.overall_confidence_score)}</span>
+          ${item.sender_email ? `<span class="text-xs text-slate-400">From: ${item.sender_email}</span>` : ''}
+          ${item.source_filename ? `<span class="text-xs text-slate-400">File: ${item.source_filename}</span>` : ''}
+        </div>
+
+        <!-- Flags -->
+        ${parseJson(item.routing_flags).length
+          ? `<div class="mb-4 p-3 bg-amber-50 border border-amber-100 rounded-xl">${flagPills(item.routing_flags)}</div>`
+          : ''}
+
+        <!-- Data grid -->
+        <div class="grid grid-cols-2 gap-x-8 gap-y-4 text-sm mb-5">
+          <div>
+            <div class="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2.5">Services</div>
+            <dl class="space-y-2">${kv('Category', svc.service_category)}${kv('Contract Value', fmtGbp(svc.contract_value_gbp))}${kv('Start Date', svc.contract_start_date)}${kv('Payment Terms', svc.payment_terms_days ? svc.payment_terms_days + ' days' : null)}</dl>
+          </div>
+          <div>
+            <div class="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2.5">Contact</div>
+            <dl class="space-y-2">${kv('Name', contact.primary_contact_name)}${kv('Email', contact.primary_contact_email)}${kv('Postcode', contact.company_address_postcode)}</dl>
+          </div>
+          <div>
+            <div class="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2.5">Banking</div>
+            <dl class="space-y-2">${kv('Bank', bank.bank_name)}${kv('Sort Code', bank.sort_code)}${kv('Account No.', bank.account_number)}${kv('IBAN', bank.iban)}</dl>
+          </div>
+          <div>
+            <div class="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2.5">Compliance</div>
+            <dl class="space-y-2">${kvBool('GDPR / DPA', cmp.has_gdpr_dpa)}${kvBool('ISO 27001', cmp.has_iso_27001)}${kvBool('Cyber Essentials', cmp.has_cyber_essentials)}${kvBool('Public Liability', cmp.has_public_liability_insurance)}${kv('Insurance Expiry', cmp.insurance_expiry_date)}</dl>
+          </div>
+        </div>
+
+        <!-- Decision area -->
+        <div class="border-t border-slate-100 pt-5">
+          <div class="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">Reviewer Notes</div>
+          <textarea id="notes-${id}" placeholder="Optional notes for the record…"
+            class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent resize-none"
+            rows="2"></textarea>
+          <div class="flex gap-3 mt-4">
+            <button onclick="makeDecision('${id}','APPROVE')"
+              class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2.5 rounded-lg text-sm transition-colors">
+              ✅ Approve
+            </button>
+            <button onclick="makeDecision('${id}','REQUEST_MORE_INFO')"
+              class="flex-1 bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2.5 rounded-lg text-sm transition-colors">
+              📋 Request Info
+            </button>
+            <button onclick="makeDecision('${id}','REJECT')"
+              class="flex-1 bg-red-600 hover:bg-red-700 text-white font-semibold py-2.5 rounded-lg text-sm transition-colors">
+              ❌ Reject
+            </button>
+          </div>
+        </div>
+      </div>
+    `);
+  } catch (e) {
+    showToast('Failed to load review item', false);
+    closeModal();
+  }
+}
+
+async function makeDecision(id, decision) {
+  const notes = $(`notes-${id}`)?.value?.trim() || null;
+  try {
+    await post(`/review/${id}/decide`, { decision, reviewer_notes: notes });
+    closeModal();
+    const labels = { APPROVE: 'Vendor approved ✅', REJECT: 'Vendor rejected', REQUEST_MORE_INFO: 'Info requested' };
+    showToast(labels[decision] || 'Decision recorded');
+    // Always refresh the sidebar badge
+    await refreshPendingBadge();
+    // Refresh whichever page is currently visible
+    if (currentPage === 'review') {
+      await loadReviewStats();
+      await loadReview(reviewPage);
+    } else if (currentPage === 'dashboard') {
+      await renderDashboard();
+    } else if (currentPage === 'vendors' && decision === 'APPROVE') {
+      await loadVendors(vendorPage);
+    }
+  } catch (e) {
+    showToast(`Failed: ${errMsg(e)}`, false);
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// SERVER-SENT EVENTS — real-time pipeline notifications
+// ═══════════════════════════════════════════════════════════════════
+function initSSE() {
+  const es = new EventSource('/events');
+
+  es.onmessage = function(e) {
+    let event;
+    try { event = JSON.parse(e.data); } catch { return; }
+
+    if (event.type === 'email_received') {
+      const count = event.attachments === 1 ? '1 attachment' : `${event.attachments} attachments`;
+      showToast(`📧 Email received from ${event.sender} — ${count}, processing…`, 'info');
+
+    } else if (event.type === 'pipeline_complete') {
+      const approved = event.decision === 'AUTO_APPROVE';
+      showToast(
+        approved ? `✅ Approved: ${event.company}` : `⚠️ Review needed: ${event.company}`,
+        approved ? 'success' : 'error'
+      );
+      refreshPendingBadge();
+      if (currentPage === 'dashboard') renderDashboard();
+      else if (currentPage === 'review') { loadReviewStats(); loadReview(reviewPage); }
+      else if (currentPage === 'vendors' && approved) loadVendors(vendorPage);
+
+    } else if (event.type === 'pipeline_error') {
+      showToast(`Pipeline failed: ${event.filename}`, 'error');
+    }
+  };
+  // EventSource auto-reconnects on drop — no onerror handler needed
+}
+
+async function refreshPendingBadge() {
+  try {
+    const s = await get('/review/stats');
+    const pb = $('pending-badge');
+    if (s.pending > 0) { pb.textContent = s.pending; pb.classList.remove('hidden'); }
+    else pb.classList.add('hidden');
+  } catch {}
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// BOOT
+// ═══════════════════════════════════════════════════════════════════
+checkHealth();
+setInterval(checkHealth, 30000);
+initSSE();
+nav('dashboard');
+</script>
+</body>
+</html>

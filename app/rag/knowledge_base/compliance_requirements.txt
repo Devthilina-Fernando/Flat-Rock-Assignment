@@ -1,0 +1,83 @@
+FLAT ROCK TECHNOLOGY LTD
+VENDOR COMPLIANCE REQUIREMENTS
+Document Reference: PROC-POL-002
+Version: 2.4
+Effective Date: 1 February 2025
+Review Date: 31 January 2026
+Policy Owner: Head of Procurement & Data Protection Officer
+Approved By: Chief Operating Officer
+
+1. PURPOSE
+
+This document defines the mandatory compliance documentation that vendors must provide as part of the onboarding process. Requirements vary by vendor type and are non-negotiable unless a formal waiver is granted by the Head of Procurement and, where data is involved, the Data Protection Officer.
+
+2. ALL VENDORS — UNIVERSAL REQUIREMENTS
+
+The following are required from every vendor regardless of category or contract value:
+
+  2.1 Completed and signed Flat Rock Technology Supplier Registration Form (current version)
+  2.2 Certificate of Incorporation or equivalent proof of legal entity status
+  2.3 Current VAT registration certificate (if VAT registered; or written confirmation if not)
+  2.4 Signed Flat Rock Technology Supplier Code of Conduct (version dated January 2025 or later)
+  2.5 Signed Modern Slavery Act Compliance Declaration (mandatory for all suppliers)
+  2.6 Evidence of Public Liability Insurance (minimum £2,000,000 per occurrence) — see PROC-POL-005
+  2.7 Evidence of Employer's Liability Insurance (minimum £5,000,000; mandatory where vendor employs staff in the UK)
+  2.8 Bank account verification (bank letter, voided cheque, or bank statement header showing sort code and account number; must match company name exactly)
+
+3. IT AND SOFTWARE VENDORS
+
+In addition to Section 2, vendors supplying IT products, software development, managed services, cloud hosting, SaaS, or technology consultancy must provide:
+
+  3.1 Professional Indemnity Insurance: Minimum £1,000,000 per claim (minimum £2,000,000 recommended for contracts above £50,000). See PROC-POL-005.
+
+  3.2 Cyber and Information Security Certification — ONE of the following is mandatory:
+      (a) ISO/IEC 27001:2022 Certificate — current, from a UKAS-accredited certifying body, with scope covering services provided to Flat Rock Technology; OR
+      (b) Cyber Essentials PLUS Certificate — current (issued within 12 months), from an NCSC-approved certifying body.
+      NOTE: Cyber Essentials (non-Plus, standard) is accepted ONLY for contracts under £15,000. For all other IT contracts, Cyber Essentials Plus or ISO 27001 is required.
+
+  3.3 Signed Data Processing Agreement (DPA) — required where the vendor will process, store, or transmit any personal data on behalf of the Company, even incidentally (e.g., support access to systems containing personal data).
+
+  3.4 Penetration Testing Evidence: For vendors with system-level access or vendors hosting Company data, evidence of an annual penetration test conducted by a CHECK-accredited or CREST-certified provider must be provided. The test must be no more than 12 months old at the point of onboarding.
+
+  3.5 Completed IT Security Questionnaire (Flat Rock Technology form REF: IT-SEC-Q-003, current version).
+
+4. DATA PROCESSORS
+
+Vendors who process personal data on behalf of Flat Rock Technology as a data processor (as defined under UK GDPR Article 4(8)) must provide, in addition to Sections 2 and 3 where applicable:
+
+  4.1 Signed Data Processing Agreement compliant with UK GDPR Article 28 — the Company's standard DPA template must be used unless legal review approves an alternative.
+  4.2 Record of Processing Activities (ROPA) extract: A summary of processing activities performed on behalf of the Company.
+  4.3 Sub-processor list: A current list of all sub-processors used in delivering services to the Company. The vendor must commit to notifying the Company at least 30 days in advance of adding or replacing sub-processors.
+  4.4 Data Residency Declaration: Written confirmation of where data will be stored and processed, including any third-country transfers and the legal mechanism relied upon (UK Adequacy Decision, International Data Transfer Agreement (IDTA), or UK Addendum to SCCs).
+  4.5 Evidence of GDPR-compliant breach notification procedures capable of meeting the Company's 24-hour internal notification requirement.
+
+5. FINANCIAL-ADJACENT AND PAYMENT SERVICES VENDORS
+
+Vendors providing financial services, payment processing, credit/lending products, or investment-related services must provide:
+
+  5.1 Evidence of Financial Conduct Authority (FCA) authorisation: A current FCA Reference Number (FRN) and confirmation that the relevant regulated activity is covered. Verification against the FCA Financial Services Register is mandatory.
+  5.2 Anti-Money Laundering (AML) Policy: A copy of the vendor's current AML policy, including Customer Due Diligence (CDD) procedures and their Money Laundering Reporting Officer (MLRO) contact details.
+  5.3 PCI DSS Compliance Certificate or Attestation of Compliance (where vendor handles cardholder data).
+
+6. PROFESSIONAL SERVICES VENDORS
+
+Vendors supplying legal, accountancy, HR, management consulting, or similar professional advisory services must provide:
+
+  6.1 Professional Indemnity Insurance: Minimum £1,000,000 per claim.
+  6.2 Relevant professional body membership or regulatory registration (e.g., SRA for solicitors, ICAEW/ACCA for accountants, CIPD for HR practitioners) where regulated activity is being performed.
+  6.3 Conflict of interest declaration.
+
+7. DOCUMENT VALIDITY AND RENEWAL
+
+  7.1 Insurance certificates must be valid at the date of onboarding and must not expire within 60 days of submission. Expired insurance is grounds for immediate HOLD status.
+  7.2 ISO 27001 and Cyber Essentials Plus certificates must be current and within their validity period.
+  7.3 Penetration test reports must be no more than 12 months old.
+  7.4 Procurement reserves the right to request updated versions of any document at any time.
+
+8. NON-COMPLIANCE
+
+Failure to provide mandatory compliance documents within 10 business days of an onboarding request will result in the application being placed on HOLD. If outstanding after 30 days, the application will be rejected. No purchase orders may be raised until full compliance is confirmed.
+
+Document Owner: Head of Procurement | procurement@flatrocktech.co.uk
+DPO Contact: dpo@flatrocktech.co.uk
+Next Review: 31 January 2026

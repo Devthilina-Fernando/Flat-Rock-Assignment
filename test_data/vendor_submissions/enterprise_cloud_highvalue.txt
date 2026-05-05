@@ -1,0 +1,243 @@
+════════════════════════════════════════════════════════════════════════
+ENTERPRISE CLOUD SOLUTIONS LTD
+SUPPLIER CAPABILITY STATEMENT & NEW VENDOR REGISTRATION PACK
+Prepared for: Flat Rock Technology Ltd — Procurement Department
+Reference: ECS-FRT-2025-NVR-001
+Submission Date: 7 March 2025
+════════════════════════════════════════════════════════════════════════
+
+EXECUTIVE OVERVIEW
+
+Enterprise Cloud Solutions Ltd (ECS) is a UK-based managed cloud services
+and infrastructure provider with over 11 years of experience delivering
+enterprise-grade cloud hosting, platform management, and digital
+transformation services to mid-market and enterprise clients. We are
+pleased to submit this capability statement and vendor registration pack
+in response to Flat Rock Technology's request for proposals for managed
+cloud infrastructure and DevOps platform services.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 1 — COMPANY INFORMATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Legal Company Name:         Enterprise Cloud Solutions Ltd
+Trading Name:               ECS | Enterprise Cloud
+Company Registration No.:   07293841
+Registered in:              England and Wales
+Date of Incorporation:      22 September 2013
+VAT Registration No.:       GB 198 4417 63
+
+Registered Office:
+  ECS House
+  14 Apex Park
+  Didcot
+  Oxfordshire
+  OX11 7LQ
+
+Principal Operations Address:
+  Innovation Centre, Suite 8
+  150 Grays Inn Road
+  London
+  WC1X 8AL
+
+Website:                    www.enterprisecloudsolutions.co.uk
+
+Business Description:
+  Managed cloud infrastructure (AWS, Azure, GCP), platform engineering,
+  DevOps as a service, cloud migration, 24/7 managed operations,
+  disaster recovery, cloud security, and technical architecture services
+  for enterprise clients.
+
+SIC Code:                   63110 — Data processing, hosting and related activities
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 2 — COMPANY CONTACTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Chief Executive Officer:
+  Name:       Richard Fowler
+  Email:      r.fowler@enterprisecloudsolutions.co.uk
+  Tel:        +44 (0)1235 448 800
+
+Commercial Director (Primary Contact):
+  Name:       Tom Ashbridge
+  Email:      t.ashbridge@enterprisecloudsolutions.co.uk
+  Tel:        +44 (0)1235 448 812
+  Mobile:     +44 (0)7771 884 203
+
+Finance / Accounts Contact:
+  Name:       Chloe Ingram
+  Email:      accounts@enterprisecloudsolutions.co.uk
+  Tel:        +44 (0)1235 448 815
+
+Data Protection Officer:
+  Name:       Sunita Rajan
+  Email:      dpo@enterprisecloudsolutions.co.uk
+  Tel:        +44 (0)1235 448 820
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 3 — PROPOSED ENGAGEMENT AND CONTRACT VALUE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Scope of Services:
+  1. Managed AWS and Azure Infrastructure: 24/7 monitoring, incident management
+     (SLA: P1 response within 15 minutes), auto-scaling, capacity planning.
+  2. DevOps Platform Engineering: CI/CD pipeline, Terraform/CloudFormation,
+     Kubernetes orchestration, release management, deployment automation.
+  3. Cloud Security Operations: WAF configuration, IAM governance, vulnerability
+     scanning, monthly security reporting.
+  4. Disaster Recovery & Business Continuity: Multi-region DR, RPO/RTO testing
+     (quarterly), backup management.
+  5. 24/7 Managed Operations & Support: Dedicated support team, assigned
+     Customer Success Manager.
+
+Proposed Annual Contract Value:  £285,000 (two hundred and eighty-five thousand pounds)
+Contract Duration:               36 months initial term
+Payment Terms:                   Net 30 days from invoice date
+Invoicing Schedule:              Monthly in arrears
+
+Total Lifetime Contract Value:   £855,000 (eight hundred and fifty-five thousand pounds)
+
+Flat Rock Technology Sponsor:    David Okafor, Head of Engineering
+                                 d.okafor@flatrocktech.co.uk
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 4 — FINANCIAL PROFILE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Bank:                   HSBC UK Bank plc
+Account Name:           Enterprise Cloud Solutions Ltd
+Sort Code:              40-27-15
+Account Number:         88341027
+
+(Bank confirmation letter enclosed — Ref: HSBC-ECS-BCL-2025-003)
+
+Annual Turnover (FY ending 30 September 2024): £14,700,000
+EBITDA (FY ending 30 September 2024):          £2,310,000
+Number of Employees:    183
+
+Credit Rating: Dun & Bradstreet rating 3A2 (low financial risk)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 5 — COMPLIANCE, CERTIFICATIONS AND SECURITY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ISO/IEC 27001:2022 Certification:
+  Status:           CERTIFIED
+  Certificate No.:  IS 4427890
+  Certifying Body:  Lloyd's Register Quality Assurance Ltd (LRQA) — UKAS Accredited
+  Scope:            Provision of managed cloud infrastructure, platform engineering,
+                    DevOps, and security operations services
+  Issue Date:       15 January 2024
+  Expiry Date:      14 January 2027
+  Surveillance Audit: Completed January 2025 (certificate maintained)
+
+Cyber Essentials Plus Certification:
+  Status:           CERTIFIED
+  Certificate No.:  CE-PLUS-2025-112847
+  Certifying Body:  IASME Consortium — NCSC Approved
+  Issue Date:       22 January 2025
+  Expiry Date:      21 January 2027
+
+ISO 9001:2015 (Quality Management):
+  Certificate No.:  QMS-8841-ECS
+  Certifying Body:  Bureau Veritas Certification
+  Valid until:      30 November 2026
+
+SOC 2 Type II Report:
+  Most recent report period: October 2023 — September 2024
+  Auditor: Grant Thornton UK LLP
+  Trust Service Criteria: Security, Availability, Confidentiality
+  Opinion: Unqualified
+
+Penetration Testing:
+  Provider:   NCC Group (CREST Certified)
+  Test Type:  Infrastructure and web application penetration test
+  Date:       November 2024
+  Scope:      All production cloud infrastructure and management portals
+  Findings:   No critical findings. 2 high findings — both remediated
+              within SLA and documented in closure report.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 6 — DATA PROTECTION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Data Processing Agreement:
+  ECS is prepared to execute Flat Rock Technology's standard DPA (template DPO-DPA-T-001).
+  A pre-signed copy is enclosed for DPO countersignature.
+  DPA Reference (draft): DPA-ECS-FRT-2025-001
+  Signed by: Sunita Rajan, DPO / Richard Fowler, CEO
+  Date: 5 March 2025
+
+Data Residency:
+  All Flat Rock Technology data will be hosted exclusively within
+  AWS eu-west-2 (London) and Azure UK South (London) regions.
+  No data will be processed outside the United Kingdom without
+  explicit prior written consent from Flat Rock Technology.
+
+Sub-processors:
+  1. Amazon Web Services EMEA SARL — cloud infrastructure (UK regions)
+  2. Microsoft Azure (Microsoft Ireland Operations Ltd) — cloud infrastructure (UK South/West)
+  3. Datadog Inc. — monitoring and observability (UK Addendum to SCCs in place)
+  4. PagerDuty Inc. — incident management (UK Addendum to SCCs in place)
+
+ICO Registration: ZA447192
+Breach Notification: ECS operates a 24-hour internal notification procedure.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 7 — INSURANCE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+All policies placed through Gallagher Insurance Brokers.
+
+Professional Indemnity Insurance:
+  Insurer:          AIG Europe S.A. (UK Branch)
+  Policy No.:       PI-AIG-ECS-2025-330041
+  Coverage:         £5,000,000 per claim / £10,000,000 in aggregate
+  Policy Period:    1 March 2026 — 28 February 2027
+  Retroactive Date: 1 September 2013
+
+Public Liability Insurance:
+  Insurer:          Zurich Insurance plc
+  Policy No.:       PL-ZUR-ECS-2025-884712
+  Coverage:         £10,000,000 per occurrence
+  Policy Period:    1 March 2026 — 28 February 2027
+
+Employer's Liability Insurance:
+  Insurer:          Zurich Insurance plc
+  Policy No.:       EL-ZUR-ECS-2025-884713
+  Coverage:         £10,000,000 per occurrence
+  Policy Period:    1 March 2026 — 28 February 2027
+
+Cyber Liability Insurance:
+  Insurer:          Beazley Furlonge Ltd
+  Policy No.:       CY-BZ-ECS-2025-73219
+  Coverage:         £5,000,000 per incident / £10,000,000 in aggregate
+  Policy Period:    1 March 2026 — 28 February 2027
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 8 — DECLARATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[X] Enterprise Cloud Solutions Ltd is not subject to any financial sanctions.
+[X] No unsatisfied CCJs are registered against the company.
+[X] No director is subject to a Director Disqualification Order.
+[X] The company is financially solvent and not subject to any insolvency process.
+[X] We have read and agree to comply with the Flat Rock Technology Supplier Code of Conduct.
+[X] We confirm compliance with our obligations under the Modern Slavery Act 2015.
+
+Name:       Richard Fowler
+Position:   Chief Executive Officer
+Company:    Enterprise Cloud Solutions Ltd
+Date:       7 March 2025
+Signature:  [Signed — R. Fowler]
+
+Enterprise Cloud Solutions Ltd | Company No. 07293841 | VAT GB 198 4417 63
+ECS House, 14 Apex Park, Didcot, Oxfordshire OX11 7LQ
+════════════════════════════════════════════════════════════════════════
+
+EXPECTED ROUTING: FLAG_FOR_REVIEW (HIGH)
+Reason: HIGH_VALUE_CONTRACT_BOARD_APPROVAL — Annual contract £285,000;
+        Total lifetime value £855,000 exceeds £500,000 Board approval threshold
+        per PROC-POL-001 Section 2.5. All compliance docs are exemplary —
+        flagged solely due to contract value requiring Board paper submission.

@@ -1,0 +1,124 @@
+FLAT ROCK TECHNOLOGY LTD
+VENDOR INSURANCE REQUIREMENTS
+Document Reference: PROC-POL-005
+Version: 2.3
+Effective Date: 1 February 2025
+Review Date: 31 January 2026
+Policy Owner: Head of Procurement
+Approved By: Chief Financial Officer
+
+1. PURPOSE
+
+This policy specifies the minimum insurance coverage levels required from all vendors and suppliers engaged by Flat Rock Technology Ltd. Insurance certificates must be submitted as part of the vendor onboarding pack and kept current throughout the duration of any active contract. Failure to maintain required insurance at any point during a contract is a material breach of the vendor agreement.
+
+2. MINIMUM INSURANCE REQUIREMENTS BY CONTRACT TYPE
+
+2.1 GENERAL SUPPLY OF GOODS AND SERVICES
+
+  Applicable to: All vendors not covered by a more specific category below.
+
+  Public Liability Insurance:
+    Contract value up to £25,000/year:        Minimum £2,000,000 per occurrence
+    Contract value £25,001 to £100,000/year:  Minimum £5,000,000 per occurrence
+    Contract value above £100,000/year:       Minimum £5,000,000 per occurrence
+
+  Employer's Liability Insurance:
+    All vendors employing staff in the UK:    Minimum £5,000,000 per occurrence (statutory)
+    Sole traders with no employees:           Exempt from EL requirements.
+
+  Product Liability Insurance (goods suppliers only):
+    Contract value up to £50,000/year:        Minimum £2,000,000 per occurrence
+    Contract value above £50,000/year:        Minimum £5,000,000 per occurrence
+
+2.2 IT AND TECHNOLOGY VENDORS
+
+  Applicable to: Software development, SaaS, cloud services, IT support, managed services, cybersecurity services, IT consultancy.
+
+  Professional Indemnity Insurance:
+    Contract value up to £50,000/year:        Minimum £1,000,000 per claim / in aggregate
+    Contract value £50,001 to £150,000/year:  Minimum £2,000,000 per claim / in aggregate
+    Contract value above £150,000/year:       Minimum £5,000,000 per claim / in aggregate
+
+  Public Liability Insurance:
+    All IT vendors:                           Minimum £2,000,000 per occurrence
+
+  Cyber Liability Insurance:
+    Mandatory where vendor holds or processes Company personal data:
+    All data-processing IT vendors:           Minimum £1,000,000 per incident
+    Vendors with system-level access:         Minimum £2,000,000 per incident
+
+  Employer's Liability Insurance:
+    Per statutory requirements as per 2.1 above.
+
+2.3 PROFESSIONAL SERVICES
+
+  Applicable to: Legal, accountancy, HR consulting, management consulting, financial advisory, recruitment.
+
+  Professional Indemnity Insurance:
+    Contract value up to £25,000/year:        Minimum £1,000,000 per claim / in aggregate
+    Contract value £25,001 to £100,000/year:  Minimum £2,000,000 per claim / in aggregate
+    Contract value above £100,000/year:       Minimum £5,000,000 per claim / in aggregate
+
+  Public Liability Insurance:
+    All professional services vendors:        Minimum £2,000,000 per occurrence
+
+2.4 FACILITIES MANAGEMENT AND PHYSICAL SERVICES
+
+  Applicable to: Office cleaning, building maintenance, security, catering, logistics, construction/fit-out.
+
+  Public Liability Insurance:                 Minimum £5,000,000 per occurrence
+  Employer's Liability Insurance:             Minimum £10,000,000 per occurrence
+  (Elevated limit required due to physical risk and multiple workers on-site)
+
+2.5 HIGH-VALUE CONTRACTS (ANNUAL CONTRACT VALUE ABOVE £500,000)
+
+  For any contract with an annual value exceeding £500,000, regardless of category, the following enhanced requirements apply:
+
+  Professional Indemnity Insurance:           Minimum £5,000,000 per claim / in aggregate
+  Public Liability Insurance:                 Minimum £10,000,000 per occurrence
+  Employer's Liability Insurance:             Minimum £10,000,000 per occurrence (where applicable)
+  Cyber Liability Insurance:                  Minimum £5,000,000 per incident (where applicable)
+
+  Additionally, the vendor must name Flat Rock Technology Ltd as an additional insured on their Public Liability policy for the duration of the contract.
+
+3. CERTIFICATE VALIDATION CHECKLIST
+
+When reviewing vendor insurance certificates, Procurement must verify the following:
+
+  [ ] Insurer is FCA/PRA-authorised (verify via FCA Financial Services Register)
+  [ ] Policy type matches requirement (PI, PL, EL — not "combined" unless each limit is clearly shown separately)
+  [ ] Coverage amounts meet or exceed the required minimums for the relevant contract type and value
+  [ ] Policy period covers the intended contract start date
+  [ ] Certificate is signed or certified by the insurer or an authorised broker
+  [ ] The insured entity name on the certificate matches the vendor's registered company name exactly
+  [ ] For claims-made policies (common for PI): confirm retroactive date is not more recent than commencement of the vendor's professional activities
+  [ ] Territorial scope includes the United Kingdom
+  [ ] Any material exclusions are noted and assessed for relevance to the engagement
+
+4. INSURANCE EXPIRY HANDLING
+
+  4.1 60-Day Warning: Where an insurance certificate submitted by a vendor will expire within 60 days, the Procurement system will issue an automated renewal warning to both the vendor and the Procurement team. The vendor must provide evidence of renewal within 30 days of the warning.
+
+  4.2 30-Day Warning: If renewal evidence has not been received within 30 days of the initial warning (i.e., 30 days before expiry), a formal notice is issued. No new purchase orders will be raised against the vendor until renewal confirmation is received.
+
+  4.3 HOLD Status — Expired Insurance: Any vendor whose insurance has expired without a valid renewal certificate on file will be placed on HOLD status immediately upon expiry. No purchase orders may be raised. The Procurement Manager must be notified on the day of status change.
+
+  4.4 Existing Contracts During HOLD: Where a vendor is placed on HOLD due to expired insurance, work may continue under exceptional circumstances only if approved in writing by the CFO, and for no longer than 14 days.
+
+  4.5 Resolution: HOLD status is lifted upon receipt and verification of a valid, current insurance certificate. Procurement must update the vendor record within 1 business day of receiving valid renewal evidence.
+
+  4.6 Persistent Non-Compliance: If a vendor fails to provide renewal insurance evidence within 30 days of HOLD status being applied, the matter is escalated to the relevant contract manager for consideration of contract termination for breach.
+
+5. SELF-INSURANCE AND CAPTIVE ARRANGEMENTS
+
+Vendors who are self-insured or use captive insurance arrangements must submit evidence of financial reserves sufficient to meet the equivalent coverage levels. Self-insurance is only accepted with CFO written approval and is subject to enhanced financial due diligence.
+
+6. CONTACT
+
+Procurement Team
+Flat Rock Technology Ltd
+procurement@flatrocktech.co.uk
+Tel: +44 (0)20 7946 0298
+
+Document Owner: Head of Procurement | procurement@flatrocktech.co.uk
+Next Review: 31 January 2026

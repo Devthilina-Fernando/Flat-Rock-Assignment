@@ -1,0 +1,27 @@
+services:
+  api:
+    build: .
+    container_name: vendor_onboarding_api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: sqlite:////app/data/vendor_onboarding.db
+      CHROMA_PERSIST_PATH: /app/chroma_db
+      GMAIL_CREDENTIALS_FILE: /app/gmail_creds/credentials.json
+      GMAIL_TOKEN_FILE: /app/gmail_creds/token.json
+    volumes:
+      # SQLite database persisted on host at ./data/
+      - ./data:/app/data
+      # ChromaDB vector store persisted on host
+      - ./chroma_db:/app/chroma_db
+      # Gmail OAuth credentials (credentials.json + token.json)
+      - ./gmail_creds:/app/gmail_creds
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s

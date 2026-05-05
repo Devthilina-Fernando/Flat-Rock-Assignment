@@ -1,0 +1,191 @@
+════════════════════════════════════════════════════════════════════════
+GLOBALDATA ANALYTICS LTD
+Company Capability Statement & New Supplier Registration
+Prepared for: Flat Rock Technology Ltd Procurement Team
+Date: 21 February 2025
+Document Version: 1.0
+════════════════════════════════════════════════════════════════════════
+
+ABOUT GLOBALDATA ANALYTICS LTD
+
+GlobalData Analytics Ltd is a UK-registered technology and data services
+company specialising in the delivery of advanced analytics, on-chain data
+intelligence, and distributed ledger verification services. Founded in
+2019, we serve clients across financial services, fintech, supply chain,
+and enterprise software sectors.
+
+Our flagship platform, ChainVerify Pro, combines traditional business
+intelligence reporting with blockchain-based data verification and
+cryptographic audit trail functionality. We help organisations gain
+verifiable, tamper-proof insights from their operational and transactional
+data.
+
+We are registered in England and Wales and fully compliant with all
+applicable UK legislation.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 1 — COMPANY REGISTRATION DETAILS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Legal Company Name:         GlobalData Analytics Ltd
+Company Registration No.:   12058734
+Registered in:              England and Wales
+Date of Incorporation:      3 June 2019
+VAT Registration No.:       GB 334 7712 51
+
+Registered Office:
+  Suite 14, The Shard Business Centre
+  32 London Bridge Street
+  London
+  SE1 9SG
+
+Trading Address:            Same as above
+
+Website:                    www.globaldataanalytics.co.uk
+
+Primary Business Description:
+  Cryptocurrency portfolio analytics, blockchain-based data verification,
+  on-chain transaction intelligence, distributed ledger audit services,
+  and enterprise reporting across decentralised and centralised data
+  sources.
+
+SIC Code:                   63110 — Data processing, hosting and related activities
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 2 — KEY CONTACTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Chief Executive Officer:
+  Name:   Oliver Ashworth
+  Email:  o.ashworth@globaldataanalytics.co.uk
+  Tel:    +44 (0)20 3948 7100
+
+Sales & Partnerships:
+  Name:   Fiona Drummond
+  Email:  f.drummond@globaldataanalytics.co.uk
+  Tel:    +44 (0)20 3948 7104
+  Mobile: +44 (0)7891 003 274
+
+Finance Contact:
+  Name:   Raj Mehta
+  Email:  finance@globaldataanalytics.co.uk
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 3 — PROPOSED ENGAGEMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Proposed Services:
+
+GlobalData Analytics Ltd proposes to provide Flat Rock Technology with
+access to our ChainVerify Pro enterprise platform on an annual
+subscription basis. The platform will provide:
+
+  - Cryptocurrency portfolio analytics dashboards (read-only, for
+    treasury and finance reporting purposes)
+  - Blockchain-based verification of vendor transaction records to
+    improve procurement audit trail integrity
+  - On-chain data integrity certificates for compliance reporting
+  - API integration with existing ERP/finance systems
+
+Annual Subscription Value:  £15,000 (fifteen thousand pounds)
+Contract Duration:          12 months, auto-renewing
+Payment Terms:              Net 30 days from invoice
+Internal Sponsor (FRT):     Michael Chen, Head of Finance
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 4 — FINANCIAL PROFILE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Bank:                   Barclays Bank UK plc
+Account Name:           GlobalData Analytics Ltd
+Sort Code:              20-41-63
+Account Number:         73841029
+
+Annual Turnover (FY ending 31 December 2023):  £980,000
+Number of Employees:    14
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 5 — COMPLIANCE AND CERTIFICATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Cyber Essentials:
+  Status:         CERTIFIED (Standard — non-Plus)
+  Certificate:    CE-2024-GDA-071183
+  Certifying Body: IASME Consortium
+  Valid until:    15 January 2027
+
+GDPR Compliance:
+  GlobalData Analytics Ltd is fully registered with the Information
+  Commissioner's Office (ICO).
+  ICO Registration No.: ZA881234
+  Data Protection Officer: Oliver Ashworth (interim DPO)
+  We are prepared to execute a Data Processing Agreement if required.
+
+Modern Slavery:
+  Annual Modern Slavery Statement published on our website.
+  Signed declaration enclosed.
+
+Anti-Money Laundering:
+  We maintain an internal AML policy appropriate to our business.
+  Designated MLRO: Raj Mehta, Finance Director.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 6 — INSURANCE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Professional Indemnity Insurance:
+  Insurer:        Hiscox Insurance Company Ltd
+  Policy No.:     PI-GDA-2025-44892
+  Coverage:       £1,000,000 per claim / £2,000,000 aggregate
+  Policy Period:  1 February 2026 — 31 January 2027
+
+Public Liability Insurance:
+  Insurer:        AXA Insurance UK plc
+  Policy No.:     PL-AXA-GDA-2025-7731
+  Coverage:       £2,000,000 per occurrence
+  Policy Period:  1 February 2026 — 31 January 2027
+
+Employer's Liability Insurance:
+  Insurer:        AXA Insurance UK plc
+  Policy No.:     EL-AXA-GDA-2025-7732
+  Coverage:       £10,000,000 per occurrence
+  Policy Period:  1 February 2026 — 31 January 2027
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 7 — DECLARATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[X] GlobalData Analytics Ltd is not subject to any financial sanctions.
+[X] No unsatisfied CCJs are registered against the company.
+[X] No director is subject to a disqualification order.
+[X] The company is solvent and not subject to any insolvency process.
+[X] We confirm compliance with our obligations under the Bribery Act 2010.
+[X] We agree to comply with the Flat Rock Technology Supplier Code of Conduct.
+
+Signed:   Oliver Ashworth — Chief Executive Officer
+Date:     21 February 2025
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ATTACHMENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[X] Certificate of Incorporation
+[X] VAT Certificate
+[X] Cyber Essentials Certificate (standard, non-Plus)
+[X] PI Insurance Certificate (Hiscox, current)
+[X] PL Insurance Certificate (AXA, current)
+[X] EL Insurance Certificate (AXA, current)
+[X] Signed Modern Slavery Declaration
+[X] Signed Supplier Code of Conduct
+[X] ICO Registration Confirmation
+
+GlobalData Analytics Ltd | Company No. 12058734
+Suite 14, 32 London Bridge Street, London SE1 9SG
+www.globaldataanalytics.co.uk
+════════════════════════════════════════════════════════════════════════
+
+EXPECTED ROUTING: FLAG_FOR_REVIEW (HIGH)
+Reason: CATEGORY_NOT_APPROVED — Primary service is cryptocurrency portfolio analytics,
+        blockchain-based data verification, on-chain transaction intelligence.
+        Per PROC-POL-003 CAT-NA-001: cryptocurrency and digital asset services are
+        on the NOT APPROVED list and cannot be overridden without Board resolution.

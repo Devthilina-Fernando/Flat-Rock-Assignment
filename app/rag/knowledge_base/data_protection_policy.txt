@@ -1,0 +1,82 @@
+FLAT ROCK TECHNOLOGY LTD
+VENDOR DATA PROTECTION REQUIREMENTS POLICY
+Document Reference: PROC-POL-004
+Version: 2.0
+Effective Date: 1 February 2025
+Review Date: 31 January 2026
+Policy Owner: Data Protection Officer
+Approved By: Chief Executive Officer
+
+1. PURPOSE AND LEGAL BASIS
+
+This policy sets out Flat Rock Technology Ltd's requirements for vendors who access, process, store, or transmit personal data in connection with their supply of goods or services. These requirements derive from the UK General Data Protection Regulation (UK GDPR) as retained in UK law by the Data Protection Act 2018 (DPA 2018).
+
+Flat Rock Technology acts as a Data Controller. Where a vendor processes personal data on the Company's behalf, that vendor acts as a Data Processor and is subject to the obligations described in this policy and in the executed Data Processing Agreement (DPA).
+
+2. WHEN A DATA PROCESSING AGREEMENT IS REQUIRED
+
+A DPA must be executed before any vendor is granted access to, or begins processing, personal data on behalf of the Company. A DPA is required in the following circumstances:
+
+  2.1 The vendor will access systems or databases that contain personal data of the Company's employees, customers, or other data subjects.
+  2.2 The vendor will process, store, analyse, or transmit personal data provided by the Company.
+  2.3 The vendor provides a SaaS, cloud, or hosted platform that the Company uses to store or process personal data.
+  2.4 The vendor provides IT support, development, or maintenance services where incidental access to personal data is reasonably foreseeable.
+  2.5 The vendor provides HR, payroll, recruitment, training, occupational health, or similar people-related services.
+
+Where it is unclear whether a DPA is required, the DPO must be consulted before onboarding proceeds. The Company's standard DPA template (template reference: DPO-DPA-T-001) must be used.
+
+3. DATA RESIDENCY REQUIREMENTS
+
+  3.1 Personal data processed on behalf of the Company must be stored and processed within the United Kingdom or the European Economic Area (EEA) unless an approved international transfer mechanism is in place.
+  3.2 Transfers of personal data to countries outside the UK and EEA are only permitted where one of the following applies:
+      (a) The destination country has been granted a UK Adequacy Regulation under Section 17A of the DPA 2018;
+      (b) Appropriate safeguards are in place via a UK International Data Transfer Agreement (IDTA) or UK Addendum to the EU Standard Contractual Clauses (SCCs);
+      (c) The transfer falls within a specific derogation under Article 49 UK GDPR (applied narrowly and only with DPO approval).
+  3.3 Vendors must declare all data residency locations at onboarding, including any cloud infrastructure regions, backup locations, and sub-processor locations.
+  3.4 Any change to data residency locations during the contract must be notified to the Company's DPO at least 30 days in advance.
+
+4. INFORMATION SECURITY STANDARDS
+
+Vendors processing personal data on behalf of the Company must implement and maintain appropriate technical and organisational measures, including as a minimum:
+
+  4.1 Encryption: All personal data must be encrypted at rest using AES-256 or equivalent, and in transit using TLS 1.2 or higher. Older protocols (SSL, TLS 1.0, TLS 1.1) must not be in use.
+  4.2 Access Controls: Access to personal data must be restricted on a strict need-to-know basis. Role-based access control (RBAC) must be implemented and access rights reviewed at least every six months.
+  4.3 Multi-Factor Authentication (MFA): MFA must be enforced for all user accounts with administrative access to systems processing personal data, and for all remote access to such systems.
+  4.4 Vulnerability Management: Critical patches applied within 72 hours; High vulnerabilities within 14 days; Medium and Low within agreed maintenance schedules.
+  4.5 Penetration Testing: Vendors must conduct penetration testing of relevant systems at least annually using a CHECK-accredited or CREST-certified provider.
+  4.6 Audit Logging: Vendors must maintain audit logs of all access to and processing of personal data for a minimum of 12 months.
+
+5. PERSONAL DATA BREACH NOTIFICATION
+
+  5.1 Vendors must notify Flat Rock Technology's DPO of any actual or suspected personal data breach involving Company data within 24 HOURS of the vendor becoming aware of the incident, regardless of severity.
+  5.2 Notification must be made to dpo@flatrocktech.co.uk and must include: a description of the nature of the breach; categories and approximate number of data subjects affected; categories and approximate number of records affected; the likely consequences of the breach; measures taken or proposed to address the breach.
+  5.3 The 24-hour notification requirement is stricter than the ICO's 72-hour statutory reporting window, and exists to allow the Company to assess and manage its own regulatory and notification obligations in a timely manner.
+  5.4 Vendors must not make any public statement or notify any regulatory body (including the ICO) regarding a breach involving Company data without prior written agreement from the Company's DPO, except where the vendor is independently legally required to do so.
+
+6. SUB-PROCESSOR REQUIREMENTS
+
+  6.1 Vendors may not engage sub-processors to process Company personal data without prior written consent from Flat Rock Technology. General authorisation for sub-processors is granted only where the vendor discloses an up-to-date sub-processor list at onboarding.
+  6.2 Vendors must notify the Company at least 30 days in advance of adding or replacing any sub-processor. The Company reserves the right to object to any new sub-processor within this 30-day window.
+  6.3 The vendor remains fully liable to the Company for any acts or omissions of its sub-processors.
+
+7. RIGHT TO AUDIT
+
+  7.1 The Company reserves the right to conduct, or commission a third party to conduct, an audit of the vendor's data protection practices, systems, and controls as they relate to the processing of Company personal data.
+  7.2 Reasonable notice (minimum 10 business days) will be given for planned audits. Emergency audits may be conducted with shorter notice in the event of a serious breach or regulatory investigation.
+  7.3 Vendors must cooperate fully with audits and provide access to all relevant systems, personnel, documentation, and records.
+  7.4 As an alternative to a direct audit, the Company may accept a current third-party assurance report (e.g., SOC 2 Type II, ISO 27001 certification audit report) subject to DPO review.
+
+8. DATA SUBJECT RIGHTS AND RETENTION
+
+  8.1 Vendors must cooperate with the Company to support its obligations to respond to data subject rights requests (access, erasure, rectification, portability, restriction, objection) within statutory timeframes.
+  8.2 Vendors must return or securely delete all Company personal data upon termination of the contract, within 30 days of written request, and provide written confirmation of deletion or destruction.
+
+9. DPO CONTACT
+
+Data Protection Officer
+Flat Rock Technology Ltd
+dpo@flatrocktech.co.uk
+Tel: +44 (0)20 7946 0312
+
+Document Owner: Data Protection Officer | dpo@flatrocktech.co.uk
+Next Review: 31 January 2026

@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.git/
+.gitignore
+chroma_db/
+data/
+vendor_onboarding.db
+*.db
+venv/
+.venv/

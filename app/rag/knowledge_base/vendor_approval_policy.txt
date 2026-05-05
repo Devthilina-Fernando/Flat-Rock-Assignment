@@ -1,0 +1,84 @@
+FLAT ROCK TECHNOLOGY LTD
+PROCUREMENT & VENDOR APPROVAL POLICY
+Document Reference: PROC-POL-001
+Version: 3.2
+Effective Date: 1 February 2025
+Review Date: 31 January 2026
+Policy Owner: Head of Procurement
+Approved By: Chief Financial Officer
+
+1. PURPOSE AND SCOPE
+
+This policy sets out the framework governing the approval, onboarding, maintenance, and termination of vendor and supplier relationships at Flat Rock Technology Ltd ("the Company"). It applies to all employees, contractors, and departments engaged in procurement activity on behalf of the Company. All vendors must be approved through the process described herein before any purchase order is raised or contract executed.
+
+2. APPROVAL AUTHORITY THRESHOLDS
+
+All vendor engagements are subject to expenditure-based approval thresholds as follows:
+
+  2.1 Up to £5,000 (single transaction or annual contract value):
+      Approval authority: Department Manager
+      Process: Vendor registration form submitted to Procurement; expedited review within 5 business days.
+
+  2.2 £5,001 to £25,000:
+      Approval authority: Department Manager + Procurement Manager
+      Process: Full vendor onboarding submission required; standard review within 10 business days.
+
+  2.3 £25,001 to £100,000:
+      Approval authority: Procurement Manager + relevant Director
+      Process: Full vendor onboarding; compliance and financial due diligence; 15 business day review.
+
+  2.4 £100,001 to £500,000:
+      Approval authority: CFO + relevant Director
+      Process: Enhanced due diligence; legal review of contract terms; formal approval memo required. 20 business day review.
+
+  2.5 Above £500,000 (including cumulative annual spend or total contract lifetime value):
+      Approval authority: Board of Directors (or Finance & Risk Committee as delegated)
+      Process: Board paper submission; full commercial, legal, financial, and risk review. Minimum 30 business day review.
+
+Where a contract has an undefined or variable value, the estimated annual spend is used for threshold purposes. Procurement reserves the right to escalate any contract to a higher tier if material risk factors are identified.
+
+3. PROHIBITED VENDOR CONDITIONS
+
+The Company will not engage any vendor that meets one or more of the following conditions:
+
+  3.1 The vendor appears on: HM Treasury UK Financial Sanctions List, OFAC Specially Designated Nationals (SDN) List, UN Consolidated Sanctions List, or EU Consolidated Sanctions List.
+
+  3.2 The vendor has an unsatisfied County Court Judgement (CCJ) registered against the company within the preceding 36 months.
+
+  3.3 The vendor appears on the Cabinet Office Debarment List or the government's published list of suppliers excluded from public procurement.
+
+  3.4 Any director of the vendor has been subject to a Disqualification Order under the Company Directors Disqualification Act 1986 within the preceding 10 years.
+
+  3.5 The vendor has been convicted of, or is under active investigation for, fraud, bribery, money laundering, or any offence under the Bribery Act 2010, Fraud Act 2006, or Proceeds of Crime Act 2002.
+
+  3.6 The vendor is in administration, liquidation, or subject to a creditors' voluntary arrangement (CVA) unless explicit CFO approval is granted.
+
+4. PAYMENT TERMS
+
+  4.1 Standard payment terms for all new vendors are Net 30 days from receipt of a valid invoice.
+  4.2 Net 45 terms may be agreed for contracts below £25,000 where requested by the vendor.
+  4.3 Payment terms beyond Net 60 days are NOT PERMITTED under any circumstances without CFO written approval. Any vendor submission requesting payment terms exceeding 60 days must be flagged for review.
+  4.4 Early payment discounts may be accepted where the discount rate exceeds 1.5% per 30 days.
+  4.5 Advance payments (payment before delivery) are prohibited except for software licence renewals or as approved by the CFO in writing.
+  4.6 The Company complies with the Prompt Payment Code and the Late Payment of Commercial Debts (Interest) Act 1998.
+
+5. VENDOR RECORD EXPIRY AND RENEWAL
+
+  5.1 All approved vendor records expire 24 months from the date of approval unless a live contract is in place.
+  5.2 Vendors with active contracts are subject to annual review triggered automatically 60 days before the anniversary of approval.
+  5.3 Renewal requires re-submission of current compliance documents, updated insurance certificates, and re-screening against prohibited vendor conditions.
+  5.4 Vendors who fail to respond to a renewal request within 30 days of notification shall be placed on HOLD status. No new purchase orders may be raised against a HOLD vendor.
+  5.5 Vendors on HOLD for more than 90 days without response shall be marked INACTIVE.
+  5.6 Reactivation of an INACTIVE vendor requires a full new onboarding submission.
+
+6. VENDOR REGISTRATION PROCESS OVERVIEW
+
+  Step 1: Vendor submits completed New Supplier Registration Pack to procurement@flatrocktech.co.uk
+  Step 2: Automated intake acknowledgement issued within 1 business day.
+  Step 3: Completeness check by Procurement (2 business days).
+  Step 4: Compliance and due diligence review per threshold timelines above.
+  Step 5: Approval decision communicated to vendor and requesting department.
+  Step 6: Vendor record created in ERP system; Purchase Order may be raised.
+
+Document Owner: Head of Procurement | procurement@flatrocktech.co.uk
+Next Review: 31 January 2026
